@@ -63,7 +63,7 @@
 
     
         
-        <span>-------</span>
+        <span>Core Modules</span>
             
                 <li class="toctree-l1 ">
                     <a class="" href="../circulation_module">Circulation</a>
@@ -82,13 +82,20 @@
                         
                             <li class="toctree-l2"><a href="#opac">OPAC</a></li>
                             
-                                <li><a class="toctree-l3" href="#what-is-an-opacoverview">What is an OPAC/Overview?</a></li>
+                                <li><a class="toctree-l3" href="#what-is-an-opac">What is an OPAC?</a></li>
                             
-                                <li><a class="toctree-l3" href="#types-of-searching">Types of Searching</a></li>
+                        
+                            <li class="toctree-l2"><a href="#types-of-searching">Types of Searching</a></li>
                             
-                                <li><a class="toctree-l3" href="#using-my-account">Using "My Account"</a></li>
+                                <li><a class="toctree-l3" href="#general-basic-search">General / Basic Search</a></li>
                             
-                                <li><a class="toctree-l3" href="#mobile-opac-for-tablets-phones">Mobile OPAC (for tablets, phones)</a></li>
+                                <li><a class="toctree-l3" href="#advanced-search-options">Advanced Search Options</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#using-my-account">Using "My Account"</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#mobile-opac">Mobile OPAC</a></li>
                             
                         
                         </ul>
@@ -133,13 +140,57 @@
           <div role="main">
             <div class="section">
               <p><center></p>
-<h1 id="opac">OPAC</h1>
+<h2 id="opac">OPAC</h2>
 <p></center>
 <hr size=2></p>
-<h2 id="what-is-an-opacoverview">What is an OPAC/Overview?</h2>
+<h3 id="what-is-an-opac">What is an OPAC?</h3>
+<ul>
+<li>OPAC is short for the <b>Online Public Access Catalog</b> or, what patrons see when they visit <a href="http://catalog.sage.eou.edu">http://catalog.sage.eou.edu</a>. It is an online, searchable directory of all of the resources held within Sage. You can search the OPAC to locate books/electronic resources/magazines/and other items that have been loaded into Evergreen. This is the primary access point for patrons.  </li>
+<li>When talking to Sage Support Staff and reporting problems a shorthand to remember is: What patrons see: <i>OPAC</i>; What staff see when logged into their workstations: <i>Staff Client</i>.</li>
+</ul>
+<p><center></p>
 <h2 id="types-of-searching">Types of Searching</h2>
+<p></center></p>
+<h3 id="general-basic-search">General / Basic Search</h3>
+<p><img alt="" src="../images/opac_basicsearch.png" /></p>
+<ul>
+<li>This is the most often used type of searching within Evergreen. Simply entering a query (generally a keyword) into the search box on <a href="http://catalog.sage.eou.edu">http://catalog.sage.eou.edu</a> and clicking "Search". You can use limiters to be more specific here as well:<ul>
+<li><b>Type</b>: Keyword, Title, Magazine, Author, Subject, Series, Bib Call Number. Note: The Bib Call Number option is <i>not</i> the same as a normal call number search (Advanced Search &gt; Numeric Search &gt; Field: Call Number (Shelf Browse). It is for the call number attached to the larger bibliographic record, not the volume call number that is created by Sage catalogers.</li>
+<li><b>Format</b>: This can limit results by records that meet a certain requirement through their MARC encoding.
+    <img alt="" src="../images/opac_searchtype.png" /></li>
+<li><b>Library</b>: You can search by individual branch, eg "Baker County Library" or district/system: eg "Baker County Library District" or the entire consortium: eg "Sage Library System".</li>
+</ul>
+</li>
+</ul>
+<h3 id="advanced-search-options">Advanced Search Options</h3>
+<ul>
+<li>This screen will look the same for the OPAC as well as the Staff Client. There are options for: <i>Advanced Search, Numeric Search and Expert Search</i>.</li>
+</ul>
+<p><img alt="" src="../images/opac_advancedsearch.png" /></p>
+<p><b>Advanced Search</b></p>
+<ul>
+<li><i>Search Input</i> allows you to specify two additional levels of the search filtering you could do at the General/Basic search level. <i>Search Filters</i> allow you to limit by those "Item Type" options (called "Format" on the basic search screen). As well as <Language> and <i>Search Library</i>. You can also limit the topics by available items and Publication Year.</li>
+</ul>
+<p><b>Numeric Search</b></p>
+<p><img alt="" src="../images/opac_numericsearch.png" /></p>
+<ul>
+<li>This screen will allow you to search more granularly for titles by ISBN, ISSN, Bib Call Number, Call Number (use this one), Library of Congress Control Number (LCCN), Title Control Number (TCN) or Item Barcode. The most valuable options in this interface are the <b>Item Barcode</b> and <b>ISBN</b> options, in my opinion. You can also limit by the <i>Search Library</i>. I would recommend leaving this at the top level: Sage Library System, to increase your chance of retrieving the correct title.</li>
+</ul>
+<p><b>Expert Search</b></p>
+<p><img alt="" src="../images/opac_expertsearch.png" /></p>
+<ul>
+<li>I like to refer to this as the "Cataloger's Search". Here you can search for a title/set of titles by its MARC tags, subfields and values. For instance, if you wanted to see all of the titles that had a 100 field entry for Stephen King, you could use:<pre><code>| Tag = 100 | Subfield = a | Value = King, Stephen |
+</code></pre>
+</li>
+</ul>
 <h2 id="using-my-account">Using "My Account"</h2>
-<h2 id="mobile-opac-for-tablets-phones">Mobile OPAC (for tablets, phones)</h2>
+<h2 id="mobile-opac">Mobile OPAC</h2>
+<ul>
+<li>Our Evergreen installation is optimized with a responsive design for mobile devices as well. A patron can search, place holds and renew items -- all through their mobile device</li>
+</ul>
+<p><img alt="" src="../images/opac_mobile1.png" />
+<img alt="" src="../images/opac_mobile2.png" />
+<img alt="" src="../images/opac_mobile3.png" /></p>
 
             </div>
           </div>
