@@ -253,31 +253,30 @@
 856 42 |3 Publisher description |u http://www.loc.gov/catdir/description/hol021/9989052.html |z connect to the publisher's description online
 </code></pre>
 <p><b>530 Note fields</b> used with 856</p>
-<pre><code>530 - ADDITIONAL PHYSICAL FORM AVAILABLE NOTE (R)
-</code></pre>
+<p><b>530 - ADDITIONAL PHYSICAL FORM AVAILABLE NOTE (R)</b></p>
 <p>Indicators blank</p>
 <p>Subfields</p>
 <pre><code>|a - Additional physical form available note (NR)
 |u - Uniform Resource Identifier (R)
 </code></pre>
 <p>Examples:</p>
-<pre><code>530    |a Online version available via The New Bartleby Library 
-|u http://www.bartleby.com/99/index.html
+<pre><code>530     |a Online version available via The New Bartleby Library
+        |u http://www.bartleby.com/99/index.html
 
-530    |a Also available online
+530     |a Also available online
 
-530    |a Online version of print publication
+530     |a Online version of print publication
 </code></pre>
 <p><b>538  - SYSTEM DETAILS NOTE (R)</b> 
 indicators blank</p>
 <p>Subfield Codes
 |a - System details note (NR)</p>
 <p>Examples:</p>
-<pre><code>538    |a Data in extended ASCII character set.
+<pre><code>538     |a Data in extended ASCII character set.
 
-538    |a Mode of access: Internet
+538     |a Mode of access: Internet
 
-538    |a Requires Adobe Acrobat Reader
+538     |a Requires Adobe Acrobat Reader
 </code></pre>
 <p>In addition to adding the appropriate 856, 530, and 538 tags, you may want to look at identifying information in the item record for future use in creating reports. </p>
 <p>Notes are not necessary for table of contents, publisher descriptions and related websites such as the author's homepage.</p>
@@ -293,58 +292,58 @@ Example titles you may want to look at are:</p>
 <h3 id="999-fields-in-sage-marc-records">999 Fields in Sage MARC Records</h3>
 <p>The 999 field sets the “material type” icon that appears in OPAC search results.  The item type is preceded by $e, and the code itse3lf by $f.  These examples of item types and codes are written here exactly as they should appear in the Evergreen MARC editor.  Where necessary to avoid confusion, a note on proper usage has been placed after the field itself.</p>
 <p>Most common material types and codes (listed alphabetically):</p>
-<pre><code>=999 \\$eAudiobook Cassette $fy
+<pre><code>999 \\$eAudiobook Cassette $fy
 
-=999 \\$eAudiobook CD $fz
+999 \\$eAudiobook CD $fz
 
-=999 \\$eBlu-ray $f5
+999 \\$eBlu-ray $f5
 
-=999 \\$eBook $fa
+999 \\$eBook $fa
 
-=999 \\$e Music Cassette $f1
+999 \\$eMusic Cassette $f1
 
-=999 \\$eMusic CD $f2
+999 \\$eMusic CD $f2
 
-=999 \\$eDVD $fh
+999 \\$eDVD $fh
 
-=999 \\$e Ebook $fx
+999 \\$eEbook $fx
 
-=999 \\$e Kit $fo
+999 \\$eKit $fo
 
-=999 \\$e Large Print $fb
+999 \\$eLarge Print $fb
 
-=999 \\$e Magazine/Journal $fs
+999 \\$eMagazine/Journal $fs
 
-=999 \\$eToys/Games $fw
+999 \\$eToys/Games $fw
 
-=999 \\$e Videocassette $fg
+999 \\$eVideocassette $fg
 </code></pre>
 <p>Less common material types: </p>
-<pre><code>=999 \\$e Map $fe
+<pre><code>999 \\$eMap $fe
 
-=999 \\$e Microfiche $fu
+999 \\$eMicrofiche $fu
 
-=999 \\$e Microfilm $fv
+999 \\$eMicrofilm $fv
 
-=999 \\$e MP3 $f3
+999 \\$eMP3 $f3
 
-=999 \\$e Cassette $fi                  [Note: This code only for cassettes that are NEITHER audiobooks nor music]
+999 \\$eCassette $fi                    [Note: This code only for cassettes that are NEITHER audiobooks nor music]
 
-=999 \\$e CD $fl                        [Note: This code only for CDs that are NEITHER audiobooks nor music]
+999 \\$eCD $fl                          [Note: This code only for CDs that are NEITHER audiobooks nor music]
 
-=999 \\$e Oregon Document $f8           [Note: for state publications]
+999 \\$eOregon Document $f8             [Note: for state publications]
 
-=999 \\$e Online Oregon Document $f6    [Note: for state publications online]
+999 \\$eOnline Oregon Document $f6      [Note: for state publications online]
 
-=999 \\$e US Document $f0
+999 \\$eUS Document $f0
 
-=999 \\$e Online US Document $7         [Note: for federal publications online]
+999 \\$eOnline US Document $7           [Note: for federal publications online]
 
-=999 \\$e US Doc CD $f9                 [Note: for federal publications on disc]
+999 \\$eUS Doc CD $f9                   [Note: for federal publications on disc]
 
-=999 \\$e E-Reader $fer                 [Note: this is for the device itself, not a downloadable file]
+999 \\$eE-Reader $fer                   [Note: this is for the device itself, not a downloadable file]
 
-=999 \\$e Thesis $ft
+999 \\$eThesis $ft
 </code></pre>
 <p><a name="catm_arc"></a></p>
 <h3 id="cataloging-an-advanced-reader-copy-or-uncorrected-proof">Cataloging an “Advanced reader copy” or “Uncorrected proof”</h3>
@@ -384,199 +383,237 @@ Example titles you may want to look at are:</p>
 <p>The importance and key to correctly coding subfield z (|z) in the ISBN &amp; LCCN is for matching purposes, both by hand and by machine.</p>
 <p><a name="catm_cat_policy"></a></p>
 <h3 id="sage-library-system-cataloging-policy">Sage Library System Cataloging Policy</h3>
-<p>Page 1 of 4</p>
 <ul>
 <li>approved by Sage Library System User Council , November 20, 2012</li>
 </ul>
 <h4 id="introduction">Introduction</h4>
-<p>The Sage Library System consortium is committed to developing and coordinating a database of
-high-quality bibliographic records for collective use by member libraries, our library patrons and
-colleagues. Maintaining the quality and integrity of each bibliographic record is an interest and a
-responsibility shared by all member libraries. Bibliographic records added to the Sage database
-become the shared property of the consortium.</p>
-<p>Sage Library System emphasizes voluntary and cooperative efforts to maintain database quality,
-accurate bibliographic information and elimination of duplicate records. For the integrity of the
-database, Sage catalogers must comply with standards for full bibliographic records and perform
-functions only according to one’s authorized permission and certification level.
-Sage Library System will make reasonable efforts to facilitate training opportunities and
-resources for all members. The Sage Cataloging Committee is responsible for monitoring
-quality assurance, coordinating regular training, and recommending measures for policy
-enforcement to the Sage User Council. Core guidance documents for catalogers include this
-Cataloging Policy, the Sage Cataloging Procedures Guide and the Sage Cataloging Manual.
-Only Sage certified catalogers may perform cataloging functions in the Sage Library System. In
-extreme cases, Sage Library System reserves the right to restrict cataloging privileges of any
-member library if the requirements of this policy are not met, including revocation of cataloging
-permissions.</p>
+<p>The Sage Library System consortium is committed to developing and coordinating a database of high-quality bibliographic records for collective use by member libraries, our library patrons and colleagues. Maintaining the quality and integrity of each bibliographic record is an interest and a responsibility shared by all member libraries. Bibliographic records added to the Sage database become the shared property of the consortium.</p>
+<p>Sage Library System emphasizes voluntary and cooperative efforts to maintain database quality, accurate bibliographic  information and elimination of duplicate records. For the integrity of the database, Sage catalogers must comply with standards for full bibliographic records and perform functions only according to one’s authorized permission and certification level.
+Sage Library System will make reasonable efforts to facilitate training opportunities and resources for all members. The Sage Cataloging Committee is responsible for monitoring quality assurance, coordinating regular training, and recommending measures for policy enforcement to the Sage User Council. Core guidance documents for catalogers include this Cataloging Policy, the Sage Cataloging Procedures Guide and the Sage Cataloging Manual. Only Sage certified catalogers may perform cataloging functions in the Sage Library System. In extreme cases, Sage Library System reserves the right to restrict cataloging privileges of any member library if the requirements of this policy are not met, including revocation of cataloging permissions.</p>
 <h4 id="cataloging-standards">Cataloging Standards</h4>
 <ol>
 <li>
-<p>Requirements
-    a. Any person performing permanent cataloging functions in the Sage Library System database must obtain prior authorization from the Sage Cataloging Committee unless operating under direct supervision of a Certified Sage Cataloger.</p>
-<p>b. All libraries must have someone certified at least at the “Basic” level (CAT3) in order to add items to the Sage Library System. It is advisable to have someone trained at the “Mid-level” (CAT2) so that a library is able to at least bring in some of their needed records or they must make arrangements with another library (with staff that has the appropriate level of training [CAT2 or CAT1]) to do this for them.</p>
-<p>c. New Sage member libraries must present cataloging qualifications to the Cataloging Committee to certify cataloging proficiency at the CAT3 “Basic” level of cataloger or higher within the first three (3) months after migration.</p>
-<p>d. At least one person from each member library must monitor the Sage-Cat-group email list.Sage Library System Cataloging Policy
-Page 2 of 4</p>
-</li>
-</ol>
-<p><b>approved by Sage Library System User Council , November 20, 2012</b></p>
-<ol>
-<li>Permission Levels – CAT3, CAT2, CAT1
-    a. Catalogers will be certified at one of three skill levels according to proficiency.</li>
-</ol>
-<p>i. CAT3 “Basic” level cataloger [barcoder]</p>
-<ol>
-<li>
-<p>Training requirements
-    a. Elementary understanding of Evergreen &amp; cataloging practices.
-    b. Fundamental understanding of MARC bibliographic records and familiarity with AACR2 cataloging rules.
-    c. Ability to search Sage Evergreen catalog efficiently and accurately
-    d. Compliance with established matching criteria for any item types to be attached</p>
-</li>
-<li>
-<p>Functional abilities
-    a. "Match &amp; attach" - attach holdings to existing bib records
-    b. Edit volume &amp; copy level data (holdings/items)
-    c. Does NOT import or edit bibliographic records</p>
-</li>
-</ol>
-<p>ii. CAT2 “Middle” level cataloger [copy cataloger]</p>
-<ol>
-<li>
-<p>Training requirements
-    a. Must have same basic level training as CAT3
-    b. Complete an advanced MARC21 training provided by Sage, or provide documentation of equivalent training/experience.</p>
-</li>
-<li>
-<p>Functional abilities
-    a. Do everything allowed by “basic” level (CAT3) catalogers
-    b. Import records via Z39.50
-    c. Update CIP records
-    d. Create “stub” (placeholders) or “temp” bibliographic records</p>
-</li>
-</ol>
-<p>iii. CAT1 “Certified” cataloger [full level cataloger]</p>
-<ol>
-<li>Training requirements
-    a. Must have achieved CAT3 and CAT2 proficiency
-    b. Able to document advanced cataloging training, either from college level courses or through a recognized professionaltraining service, as approved by the Sage Cataloging Committee.</li>
-<li>Functional abilities
-    a. Do everything allowed by CAT2 “mid-level” “copy catalogers”
-    b. Import records via batch loading
-    c. Overlay existing “stub”/“temp” bibliographic records
-    d. Overlay existing bibliographic records
-    e. Create original bibliographic records
-    f. Add new fields to bibliographic records Sage Library System Cataloging Policy</li>
-</ol>
-<p>Page 3 of 4</p>
+<p>Requirements</p>
 <ul>
-<li>approved by Sage Library System User Council , November 20, 2012</li>
+<li>
+<p>Any person performing permanent cataloging functions in the Sage Library System database must obtain prior authorization from the Sage Cataloging Committee unless operating under direct supervision of a Certified Sage Cataloger.</p>
+</li>
+<li>
+<p>All libraries must have someone certified at least at the “Basic” level (CAT3) in order to add items to the Sage Library System. It is advisable to have someone trained at the “Mid-level” (CAT2) so that a library is able to at least bring in some of their needed records or they must make arrangements with another library (with staff that has the appropriate level of training [CAT2 or CAT1]) to do this for them.</p>
+</li>
+<li>
+<p>New Sage member libraries must present cataloging qualifications to the Cataloging Committee to certify cataloging proficiency at the CAT3 “Basic” level of cataloger or higher within the first three (3) months after migration.</p>
+</li>
+<li>
+<p>At least one person from each member library must monitor the Sage-Cat-group email list.Sage Library System Cataloging Policy</p>
+</li>
 </ul>
-<p>g. Merge bibliographic records
-h. Update bibliographic records
-i. Delete existing bibliographic records
-j. Delete fields in existing bibliographic records prior to or
-after import
-III. Cataloging Support
-1. Regional Cataloging Mentors
+</li>
+</ol>
+<h5 id="permission-levels-cat3-cat2-cat1">Permission Levels – CAT3, CAT2, CAT1</h5>
+<p>Catalogers will be certified at one of three skill levels according to proficiency.</p>
+<h6 id="cat3-basic-level-cataloger-barcoder">CAT3 “Basic” level cataloger [barcoder]</h6>
+<ol>
+<li>
+<p>Training requirements</p>
+<ul>
+<li>Elementary understanding of Evergreen &amp; cataloging practices.</li>
+<li>Fundamental understanding of MARC bibliographic records and familiarity with AACR2 cataloging rules.</li>
+<li>Ability to search Sage Evergreen catalog efficiently and accurately</li>
+<li>Compliance with established matching criteria for any item types to be attached</li>
+</ul>
+</li>
+<li>
+<p>Functional abilities</p>
+<ul>
+<li>"Match &amp; attach" - attach holdings to existing bib records</li>
+<li>Edit volume &amp; copy level data (holdings/items)</li>
+<li>Does NOT import or edit bibliographic records</li>
+</ul>
+</li>
+</ol>
+<h6 id="cat2-middle-level-cataloger-copy-cataloger">CAT2 “Middle” level cataloger [copy cataloger]</h6>
+<ol>
+<li>
+<p>Training requirements</p>
+<ul>
+<li>Must have same basic level training as CAT3</li>
+<li>Complete an advanced MARC21 training provided by Sage, or provide documentation of equivalent training/experience.</li>
+</ul>
+</li>
+<li>
+<p>Functional abilities</p>
+<ul>
+<li>Do everything allowed by “basic” level (CAT3) catalogers</li>
+<li>Import records via Z39.50</li>
+<li>Update CIP records</li>
+<li>Create “stub” (placeholders) or “temp” bibliographic records</li>
+</ul>
+</li>
+</ol>
+<h6 id="cat1-certified-cataloger-full-level-cataloger">CAT1 “Certified” cataloger [full level cataloger]</h6>
+<ol>
+<li>
+<p>Training requirements</p>
+<ul>
+<li>Must have achieved CAT3 and CAT2 proficiency</li>
+<li>Able to document advanced cataloging training, either from college level courses or through a recognized professionaltraining service, as approved by the Sage Cataloging Committee.</li>
+</ul>
+</li>
+<li>
+<p>Functional abilities</p>
+<ul>
+<li>Do everything allowed by CAT2 “mid-level” “copy catalogers”</li>
+<li>Import records via batch loading</li>
+<li>Overlay existing “stub”/“temp” bibliographic records</li>
+<li>Overlay existing bibliographic records</li>
+<li>Create original bibliographic records</li>
+<li>Add new fields to bibliographic records Sage Library System Cataloging Policy</li>
+<li>Merge bibliographic records</li>
+<li>Update bibliographic records</li>
+<li>Delete existing bibliographic records</li>
+<li>Delete fields in existing bibliographic records prior to or after import</li>
+</ul>
+</li>
+</ol>
+<h5 id="cataloging-support">Cataloging Support</h5>
+<ol>
+<li>Regional Cataloging Mentors
 Sage Library System has volunteer regional cataloging mentors who serve as “go-to” people for
 cataloging questions/issues in each area. The mentors will coordinate cataloging training and
-quality in their regions as time permits.
-IV. Permanent Record Standards
-Sage Library System is committed to maintaining a database of high quality bibliographic
-records for collective use by member libraries.
-1. All bibliographic records contributed to the Sage catalog must contain specific mandatory
-elements and meet a minimum level of completeness.
-2. Bibliographic records must:
-a. Use MARC Format for Bibliographic Data
-b. Contain core level fields as defined by Library of Congress’s BIBCO Core
-Record Standards
-c. Comply with AACR2R (and LCRI rules)
-d. Not be imported unless 1) there is no existing matching record as defined in the
-Procedures Guide or 2) the existing matched record is being overlaid.
-e. Use standard GMD terminology
-f. Contain only bibliographic-level data, not holding specific information
-g. Contain at least one Library of Congress Subject Heading (LCSH) if item is nonfiction
-h. Be compared with the item in hand
-3. Temporary brief records will not be subject to the same standards as full records,
-including content, style, and authority work.
-V. Maintenance standards
-Member libraries are expected to:
-1. Keep holdings current
-2. Designate a staff member to monitor the Sage-Cat-Group email list
-3. Resolve problems as reported to them by the Sage Cataloging Committee and mentors
-4. Respond to staffing surveys conducted by the Sage Cataloging Committee Sage Library System Cataloging Policy
-Page 4 of 4
-- approved by Sage Library System User Council , November 20, 2012
-5. Maintain awareness of current Sage cataloging policy and procedures
-VI. Communications
-1. The Sage Cataloging Committee will meet regularly. Regular Committee meetings are
-open to the participation of all Sage members. The schedule and agenda of regular
-meetings shall be accessible to Sage member libraries.
-2. All notices coming from the Sage Cataloging Committee will be given via the Sage-CatGroup
-email list and documented on the Sage Wikispaces.
-VII. Reporting and resolving problems
-Inquiries or problems are generally reported directly to the library(ies) that contributed the
-record(s). For an issue that may have broader implications for a union catalog, the inquiry may
-be directed to the Catalog Committee Chair who will review it and follow up as appropriate.
-VIII. Sanction of Privileges
-1. With recommendations from the Sage Cataloging Committee, the Sage User Council may
-restrict or revoke cataloging privileges of any individual or Sage member library if work
-repeatedly fails to meet with the established standards set by the consortium or if the
-cataloging training requirements are not maintained.
-2. Cataloging privileges will not be sanctioned prior to consultation with the affected
-library’s director, other cataloging staff, and if necessary, the library board of directors.
-3. Libraries under cataloging sanctions may appeal for restoration:
-a. At any regular or special meeting of the Cataloging Committee
-b. At any regular or special meeting of the Sage User Council
-4. Restoration of privileges may be granted by the Sage User Council, with
-recommendations from the Cataloging Committee.</p>
+quality in their regions as time permits.</li>
+</ol>
+<h5 id="permanent-record-standards">Permanent Record Standards</h5>
+<p>Sage Library System is committed to maintaining a database of high quality bibliographic
+records for collective use by member libraries.</p>
+<ol>
+<li>All bibliographic records contributed to the Sage catalog must contain specific mandatory elements and meet a minimum level of completeness.</li>
+<li>
+<p>Bibliographic records must:</p>
+<ul>
+<li>Use MARC Format for Bibliographic Data</li>
+<li>Contain core level fields as defined by Library of Congress’s BIBCO Core
+Record Standards</li>
+<li>Comply with AACR2R (and LCRI rules)</li>
+<li>Not be imported unless 1) there is no existing matching record as defined in the Procedures Guide or 2) the existing matched record is being overlaid.</li>
+<li>Use standard GMD terminology</li>
+<li>Contain only bibliographic-level data, not holding specific information</li>
+<li>Contain at least one Library of Congress Subject Heading (LCSH) if item is nonfiction</li>
+<li>Be compared with the item in hand</li>
+</ul>
+</li>
+<li>
+<p>Temporary brief records will not be subject to the same standards as full records, including content, style, and authority work.</p>
+</li>
+</ol>
+<h5 id="maintenance-standards">Maintenance standards</h5>
+<p>Member libraries are expected to:</p>
+<ol>
+<li>Keep holdings current</li>
+<li>Designate a staff member to monitor the Sage-Cat-Group email list</li>
+<li>Resolve problems as reported to them by the Sage Cataloging Committee and mentors</li>
+<li>Respond to staffing surveys conducted by the Sage Cataloging Committee Sage Library System Cataloging Policy</li>
+<li>Maintain awareness of current Sage cataloging policy and procedures</li>
+</ol>
+<h5 id="communications">Communications</h5>
+<ol>
+<li>The Sage Cataloging Committee will meet regularly. Regular Committee meetings are open to the participation of all Sage members. The schedule and agenda of regular meetings shall be accessible to Sage member libraries.</li>
+<li>All notices coming from the Sage Cataloging Committee will be given via the Sage-CatGroup email list and documented on the Sage Wikispaces.</li>
+</ol>
+<h5 id="reporting-and-resolving-problems">Reporting and resolving problems</h5>
+<p>Inquiries or problems are generally reported directly to the library(ies) that contributed the record(s). For an issue that may have broader implications for a union catalog, the inquiry may be directed to the Catalog Committee Chair who will review it and follow up as appropriate.</p>
+<h5 id="sanction-of-privileges">Sanction of Privileges</h5>
+<ol>
+<li>With recommendations from the Sage Cataloging Committee, the Sage User Council may restrict or revoke cataloging privileges of any individual or Sage member library if work repeatedly fails to meet with the established standards set by the consortium or if the cataloging training requirements are not maintained.</li>
+<li>Cataloging privileges will not be sanctioned prior to consultation with the affected library’s director, other cataloging staff, and if necessary, the library board of directors.</li>
+<li>Libraries under cataloging sanctions may appeal for restoration:<ul>
+<li>At any regular or special meeting of the Cataloging Committee</li>
+<li>At any regular or special meeting of the Sage User Council</li>
+</ul>
+</li>
+<li>Restoration of privileges may be granted by the Sage User Council, with recommendations from the Cataloging Committee.</li>
+</ol>
 <p><a name="catm_cip_records"></a>
-CIP (Cataloging-in-Publication) records can be identified by these three features:
-•   encoding level (position 17) in the 000 or leader = 8
-•   presence of projected publication date in 263 tag
-•   300 tag with no pagination or dimensions – only “page cm.”
-Additionally RDA-based records can be identified by the presence of ‡e rda in 040 field &amp; an “i” under Desc in fixed fields table.<br />
-[Note regarding transcription in RDA records:  RDA cataloging follows the principle of “Take what you see and accept what you get.” This means you should transcribe exactly what is found on the resource, &amp; accept copy in records as supplied. However, in many instances RDA gives a range of options in how fully to record information, &amp; also allows for establishing local guidelines.  This means we may find that records will reflect a variety of cataloging practices &amp; still fall within the rules.]</p>
+CIP (Cataloging-in-Publication) records can be identified by these three features:</p>
+<ul>
+<li>encoding level (position 17) in the 000 or leader = 8</li>
+<li>presence of projected publication date in 263 tag</li>
+<li>300 tag with no pagination or dimensions – only “page cm.”
+Additionally RDA-based records can be identified by the presence of ‡e rda in 040 field &amp; an “i” under Desc in fixed fields table.  </li>
+</ul>
+<p>[Note regarding transcription in RDA records:  RDA cataloging follows the principle of “Take what you see and accept what you get.” This means you should transcribe exactly what is found on the resource, &amp; accept copy in records as supplied. However, in many instances RDA gives a range of options in how fully to record information, &amp; also allows for establishing local guidelines. This means we may find that records will reflect a variety of cataloging practices &amp; still fall within the rules.]</p>
 <p>These records are created prior to the publication of the materials, therefore the records contain incomplete and sometimes inaccurate information.  It is very important to verify the LCCN (tag 010 ‡a) and the ISBN (tag 020) to be sure the record matches your item.  Updating these CIP records involves several important steps.</p>
-<p>1)  Add your Library code to 040 in subfield ‡d.  (See list of “040 MARC Tag - OCLC Codes sorted by…” in the Sage Cataloging Standards Manual for your library code.)  This notates who the modifying agency of the record is.  [If you are using OCLC this is done for you.]</p>
-<p>2)  1XX tag:  Be sure the entry is accurate &amp; any 7XX fields, as well.  Also note the order of authors in the statement of responsibility (245 ‡c) as changes here affect the 1XX &amp; 7XX tags.</p>
-<p>3)  245 tag:  Very frequently the title proper (subfield ‡a) and/or, especially, the subtitle (subfield ‡b) changes between the time the CIP cataloging is done and the time the item is published.  There may be subtle differences that can be easily overlooked.  Please be sure to correct the title and/or subtitle according to the title page (or other preferred source of information) of the piece in hand. With RDA transcription is key, so be sure you have exactly what is on the piece in hand.  Also check the indicators for this tag.</p>
-<p>4)  264 tag: Compare the publication information &amp; date on the record to the piece in hand. If they aren’t the same, change the 264 field to match the piece in hand.
-[MARC21 recently introduced/defined the 264 field for use with RDA-based bib records, replacing the 260 field.  The 264 statement relates to the publication, printing, distribution, issue, release, or production of a work.  Indicators &amp; subfield codes are listed below.]
-     Indicators</p>
-<pre><code>      First - Sequence of statements
-           # [blank] - Not applicable/No information
-                     provided/Earliest
-           2 - Intervening
-           3 - Current/latest
+<ol>
+<li>
+<p>Add your Library code to 040 in subfield ‡d.  (See list of “040 MARC Tag - OCLC Codes sorted by…” in the Sage Cataloging Standards Manual for your library code.)  This notates who the modifying agency of the record is.  [If you are using OCLC this is done for you.]</p>
+</li>
+<li>
+<p>1XX tag:  Be sure the entry is accurate &amp; any 7XX fields, as well.  Also note the order of authors in the statement of responsibility (245 ‡c) as changes here affect the 1XX &amp; 7XX tags.</p>
+</li>
+<li>
+<p>245 tag:  Very frequently the title proper (subfield ‡a) and/or, especially, the subtitle (subfield ‡b) changes between the time the CIP cataloging is done and the time the item is published.  There may be subtle differences that can be easily overlooked.  Please be sure to correct the title and/or subtitle according to the title page (or other preferred source of information) of the piece in hand. With RDA transcription is key, so be sure you have exactly what is on the piece in hand.  Also check the indicators for this tag.</p>
+</li>
+<li>
+<p>264 tag: Compare the publication information &amp; date on the record to the piece in hand. If they aren’t the same, change the 264 field to match the piece in hand.</p>
+</li>
+</ol>
+<p>[MARC21 recently introduced/defined the 264 field for use with RDA-based bib records, replacing the 260 field.  The 264 statement relates to the publication, printing, distribution, issue, release, or production of a work.  Indicators &amp; subfield codes are listed below.]</p>
+<p>Indicators</p>
+<p>First - Sequence of statements</p>
+<pre><code># [blank] - Not applicable/No information
+            provided/Earliest
+2 - Intervening
+3 - Current/latest
 </code></pre>
-<p>Second - Function of entity
-     0 - Production
-     1 - Publication
-     2 - Distribution
-     3 - Manufacture
-     4 - Copyright notice date</p>
-<pre><code>              Subfield Codes      [R=Repeatable ; NR=Not Repeatable]
-                   ‡a - Place of production, publication, distribution, manufacture (R)
-                   ‡b - Name of producer, publisher, distributor, manufacturer (R)
-                   ‡c - Date of production, publication, distribution, manufacture, or copyright notice (R)
-                   ‡3 - Materials specified (NR)
-                   ‡6 - Linkage (NR)
-                   ‡8 - Field link and sequence number (R)
+<p>Second - Function of entity</p>
+<pre><code> 0 - Production
+ 1 - Publication
+ 2 - Distribution
+ 3 - Manufacture
+ 4 - Copyright notice date
 </code></pre>
-<p>5)  263 tag:  Delete this tag as it contains projected publication date which is of no value to us now.</p>
-<p>6)  300 tag:  Add pagination information (including any preliminary pagination) in subfield ‡a, illustrative information in subfield ‡b (if applicable), and dimension information in subfield ‡c.  (Measure and input as height x width if the book is wider than it is tall; otherwise include only height.)   [Remember, if you added information in subfield ‡b, there also needs to be a code in the fixed fields for illustrations (Ills in fixed fields table) to reflect that as well.] </p>
-<p>•   RDA based standards are different than AACR2 in that there are no longer abbreviations used, so please spell out page, pages, leaf, leaves, volume, volumes, illustrations, etc.  Also, do not use a square bracket with the number of counted pages, instead use the counted number with the statement “unnumbered pages” or continue to use 1 volume (unpaged).  Also, cm is not considered an abbreviation in RDA but a symbol so continue to use cm for measurement as appropriate.</p>
-<p>7)  33X tags: 336, 337, &amp; 338 tags now take the place of GMDs and are newly defined in MARC21.  336 field is for content types (or form of communication in which the content is expressed), 337 field is for media types (or type of device required to access content), &amp; 338 field is for carrier types (or type of carrier used to convey content).  See the term and code lists on Library of Congress website for RDA Content Types at www.loc.gov/standards/valuelist/rdacontent.html, RDA Media Types, at www.loc.gov/standards/valuelist/rdamedia.html, &amp; RDA Carrier Types at www.loc.gov/standards/valuelist/rdacarrier.html.  A regular print book would be coded similar to this:
-336 ‡atext‡2rdacontent
+<p>Subfield Codes  R=Repeatable ; NR=Not Repeatable]</p>
+<pre><code>‡a - Place of production, publication, distribution, manufacture (R)
+‡b - Name of producer, publisher, distributor, manufacturer (R)
+‡c - Date of production, publication, distribution, manufacture, or copyright notice (R)
+‡3 - Materials specified (NR)
+‡6 - Linkage (NR)
+‡8 - Field link and sequence number (R)
+</code></pre>
+<ol>
+<li>
+<p>263 tag:  Delete this tag as it contains projected publication date which is of no value to us now.</p>
+</li>
+<li>
+<p>300 tag:  Add pagination information (including any preliminary pagination) in subfield ‡a, illustrative information in subfield ‡b (if applicable), and dimension information in subfield ‡c.  (Measure and input as height x width if the book is wider than it is tall; otherwise include only height.)   [Remember, if you added information in subfield ‡b, there also needs to be a code in the fixed fields for illustrations (Ills in fixed fields table) to reflect that as well.]</p>
+<ul>
+<li>RDA based standards are different than AACR2 in that there are no longer abbreviations used, so please spell out page, pages, leaf, leaves, volume, volumes, illustrations, etc.  Also, do not use a square bracket with the number of counted pages, instead use the counted number with the statement “unnumbered pages” or continue to use 1 volume (unpaged).  Also, cm is not considered an abbreviation in RDA but a symbol so continue to use cm for measurement as appropriate.</li>
+</ul>
+</li>
+<li>
+<p>33X tags: 336, 337, &amp; 338 tags now take the place of GMDs and are newly defined in MARC21.  336 field is for content types (or form of communication in which the content is expressed), 337 field is for media types (or type of device required to access content), &amp; 338 field is for carrier types (or type of carrier used to convey content).  See the term and code lists on Library of Congress website for RDA Content Types at www.loc.gov/standards/valuelist/rdacontent.html, RDA Media Types, at www.loc.gov/standards/valuelist/rdamedia.html, &amp; RDA Carrier Types at www.loc.gov/standards/valuelist/rdacarrier.html.  A regular print book would be coded similar to this:</p>
+<pre><code>336 ‡atext‡2rdacontent
 337 ‡aunmediated‡2rdamedia
-338 ‡avolume‡2rdacarrier</p>
-<p>8)  490 tag: Does it need attention (or a companion 8XX field added, which would mean a change of 1st indicator in 490)?</p>
-<p>9)  504 tag:  If the bibliography note is incomplete update it with the correct pagination.  </p>
-<p>10) 505 tag:  Check the contents listed (if applicable).</p>
-<p>11) Change Rec Stat code (position 5) in 000 or leader to “p” (meaning encoding level increase from CIP record) [generally this will be a “n” for new record in a CIP record].</p>
-<p>12) Change the Encoding level code from 8 (CIP record) to a space (full level). </p>
-<p>13) Add the abbreviation for illustrations into the fixed field for books (008 – positions 18-21, or Ills in fixed fields table).  The codes used here describe the illustrative matter of the book and correspond to the illustrations listed in the 300 tag (which will also be added).  If there are no illustrations, leave Ills in the fixed field blank.  Up to 4 single character codes can be used:</p>
+338 ‡avolume‡2rdacarrier
+</code></pre>
+</li>
+<li>
+<p>490 tag: Does it need attention (or a companion 8XX field added, which would mean a change of 1st indicator in 490)?</p>
+</li>
+<li>
+<p>504 tag:  If the bibliography note is incomplete update it with the correct pagination.  </p>
+</li>
+<li>
+<p>505 tag:  Check the contents listed (if applicable).</p>
+</li>
+<li>
+<p>Change Rec Stat code (position 5) in 000 or leader to “p” (meaning encoding level increase from CIP record) [generally this will be a “n” for new record in a CIP record].</p>
+</li>
+<li>
+<p>Change the Encoding level code from 8 (CIP record) to a space (full level). </p>
+</li>
+<li>
+<p>Add the abbreviation for illustrations into the fixed field for books (008 – positions 18-21, or Ills in fixed fields table).  The codes used here describe the illustrative matter of the book and correspond to the illustrations listed in the 300 tag (which will also be added).  If there are no illustrations, leave Ills in the fixed field blank.  Up to 4 single character codes can be used:</p>
 <p>[blank] – no illustrations
 a – illustrations
 b – maps
@@ -593,117 +630,241 @@ l – samples
 m – phonodiscs, phonowire
 o – photographs
 p – illuminations </p>
-<p>14) Check the date in the fixed field (008 – positions 07-10 for Date1 &amp; 11-14 Date2).  This date(s) should match the publication date of the piece in hand and the date(s) entered in tag 264 ‡c.  If there is not a match, correct the fixed field date(s) and the date(s) in the 264 tag to match the date(s) of the piece in hand.  The date is a 4-digit year – no month designation included.  Also be sure to double check the country and make sure it matches 264 ‡a.</p>
-<p>15) Although GMDs are no longer allowed under RDA standards, until the 33X fields are usable in the ILSs the GMDs are still allowable if a library finds need of them, so please use it as needed.  [“It is recommended that the 245 subfield ‡h GMD be retained for a period of time &amp; not deleted, even though this element will eventually be replaced in function by the 336, 337, and 338 fields. The Task group recommends that the GMD be considered for removal no earlier than March 31, 2016.” -- PCC-Hybrid-Bib-Rec-Guidelines-TG-Report, p.8: www.loc.gov/aba/pcc/rda/RDA Task groups and charges/PCC-Hybrid-Bib-Rec-Guidelines-TG-Report.docx] -- If the piece in hand is a large print book add a GMD “[text (large print)]” to the 245 (see example below).  [Remember that subfield ‡h precedes subfield ‡b.]  Check to make sure the form of item in fixed field for books (008 – position 23 ; Form in fixed fields table) is coded d for large print.  In 300 tag if “(large print)” is present remove it.
-       245 10 ‡aBetty‡h[text (large print)] :‡ba glad awakening /‡cBetty Ford with Chris Chase.</p>
+</li>
+<li>
+<p>Check the date in the fixed field (008 – positions 07-10 for Date1 &amp; 11-14 Date2).  This date(s) should match the publication date of the piece in hand and the date(s) entered in tag 264 ‡c.  If there is not a match, correct the fixed field date(s) and the date(s) in the 264 tag to match the date(s) of the piece in hand.  The date is a 4-digit year – no month designation included.  Also be sure to double check the country and make sure it matches 264 ‡a.</p>
+</li>
+<li>
+<p>Although GMDs are no longer allowed under RDA standards, until the 33X fields are usable in the ILSs the GMDs are still allowable if a library finds need of them, so please use it as needed.  [“It is recommended that the 245 subfield ‡h GMD be retained for a period of time &amp; not deleted, even though this element will eventually be replaced in function by the 336, 337, and 338 fields. The Task group recommends that the GMD be considered for removal no earlier than March 31, 2016.” -- PCC-Hybrid-Bib-Rec-Guidelines-TG-Report, p.8: www.loc.gov/aba/pcc/rda/RDA Task groups and charges/PCC-Hybrid-Bib-Rec-Guidelines-TG-Report.docx] -- If the piece in hand is a large print book add a GMD “[text (large print)]” to the 245 (see example below).  [Remember that subfield ‡h precedes subfield ‡b.]  Check to make sure the form of item in fixed field for books (008 – position 23 ; Form in fixed fields table) is coded d for large print.  In 300 tag if “(large print)” is present remove it.</p>
+<pre><code>245 10 ‡aBetty‡h[text (large print)] :‡ba glad awakening /‡cBetty Ford with Chris Chase.
+</code></pre>
+</li>
+</ol>
 <p>[Note:  Dea Nowell at Umatilla County Special Library District uses encoding level of 1 when she updates a CIP record.  The encoding level 1 is for “Full level, material not examined.”  Dea uses this because she generally does not have the piece in hand but is relying on the information provided by the libraries that she works with.  Feel free to make corrections to the bib record if you need to and be sure to add your code to the 040 and change the encoding level as appropriate.]</p>
-<p><a name="catm_isbn_faq"></a>
-ISBN Questions and Answers
-revised 2007</p>
+<p><a name="catm_isbn_faq"></a></p>
+<h4 id="isbn-questions-and-answers">ISBN Questions and Answers</h4>
+<p>revised 2007</p>
+<ul>
+<li>
 <p>What is an ISBN?
 ISBN stands for International Standard Book Number – a unique identifier assigned to each edition of every published book and book-like product published internationally.  The ISBN was originally developed as a 10-digit number (ISBN-10).  In January 2007, the ISBN was redefined from a 10-digit (ISBN-10) to a 13-digit number (ISBN-13).</p>
+</li>
+<li>
 <p>What is the purpose of an ISBN?
 The purpose of the ISBN is to establish and identify one title or edition of a title from one specific publisher and it is unique to that edition, allowing for more efficient marketing of products by booksellers, libraries, universities, wholesalers and distributors.  [Be aware that some publishers reuse ISBN’s making them not so unique.]</p>
+</li>
+<li>
 <p>How is the ISBN constructed?
 An ISBN-10 consists of 10 digits and whenever it is printed it is preceded by the letters ISBN.  The 10-digit number is divided by hyphens into 4 parts of variable length.  The four parts of an ISBN are as follows: 1) Group or country identifier; 2) Publisher identifier; 3) Title identifier; 4) Check digit. </p>
+</li>
+</ul>
 <p>An ISBN-13 contains 13 digits which are divided into five parts of variable length, each part separated by a hyphen.  The five parts of an ISBN are as follows: 1) prefix; 2) Group or country identifier; 3) Publisher identifier; 4) Title identifier; 5) Check digit. </p>
-<p>What do the four/five parts of the ISBN mean?<br />
-1)  Prefix:  The first ISBN-13’s will be prefixed by "978".  These ISBN-13’s beginning with 978 are constructed the same way as the ISBN-10 and have an equivalent ISBN-10.  When the supply of 978 numbers is exhausted the prefix will become 979.  (There will be no ISBN-10 equivalent for the ISBN-13’s beginning with 979.)</p>
-<p>2)  Group or Country Identifier:  This part of the ISBN identifies a national or geographic grouping of publishers that participates in the ISBN system. </p>
-<p>3)  Publisher Identifier:  This part of the ISBN identifies the publisher to whom the ISBN was originally allocated.  Each publisher is allocated their publishing prefixes.  If they go beyond their initial title allotment they will be issued an additional publishing prefix.  Therefore, a publishing agency might carry several publishing prefixes.  Keep in mind, however, that as publishers buy and sell various imprints (subsidiaries of a publishing house) or parts of imprints, this part of the ISBN becomes less and less reliable as a way to identify the publisher of the title. </p>
-<p>4)  Title Identifier:  This part of the ISBN identifies a particular title or edition of a title.</p>
-<p>5)  Check Digit:  The check digit is the single digit at the end of the ISBN that ensures that each ISBN is valid, meaning that the number is correct.  The check digits are calculated based on the numbers contained within the ISBN.  (Note: Since the numbers contained within an ISBN-10 and a matching ISBN-13 are slightly different the check digits of each will almost always differ.)  A Roman numeral X is used when 10 would occur as the check digit.</p>
+<ul>
+<li>What do the four/five parts of the ISBN mean?  </li>
+<li>
+<p>Prefix:  The first ISBN-13’s will be prefixed by "978".  These ISBN-13’s beginning with 978 are constructed the same way as the ISBN-10 and have an equivalent ISBN-10.  When the supply of 978 numbers is exhausted the prefix will become 979.  (There will be no ISBN-10 equivalent for the ISBN-13’s beginning with 979.)</p>
+</li>
+<li>
+<p>Group or Country Identifier:  This part of the ISBN identifies a national or geographic grouping of publishers that participates in the ISBN system. </p>
+</li>
+<li>
+<p>Publisher Identifier:  This part of the ISBN identifies the publisher to whom the ISBN was originally allocated.  Each publisher is allocated their publishing prefixes.  If they go beyond their initial title allotment they will be issued an additional publishing prefix.  Therefore, a publishing agency might carry several publishing prefixes.  Keep in mind, however, that as publishers buy and sell various imprints (subsidiaries of a publishing house) or parts of imprints, this part of the ISBN becomes less and less reliable as a way to identify the publisher of the title. </p>
+</li>
+<li>
+<p>Title Identifier:  This part of the ISBN identifies a particular title or edition of a title.</p>
+</li>
+<li>
+<p>Check Digit:  The check digit is the single digit at the end of the ISBN that ensures that each ISBN is valid, meaning that the number is correct.  The check digits are calculated based on the numbers contained within the ISBN.  (Note: Since the numbers contained within an ISBN-10 and a matching ISBN-13 are slightly different the check digits of each will almost always differ.)  A Roman numeral X is used when 10 would occur as the check digit.</p>
+</li>
+<li>
 <p>When should a new ISBN be issued?
 A separate ISBN must be assigned to every title, or edition of a title by each publisher, but not to an unchanged impression or unchanged reprint of the same title in the same format by the same publisher.</p>
+</li>
+<li>
 <p>Where is an ISBN located on the book?
 An ISBN is printed on the lower portion of the back cover of a book above the barcode and on the copyright page.  Each format or binding must have a separate ISBN.</p>
+</li>
+<li>
 <p>What is an ISSN?
 International Standard Serial Number (ISSN) is the numbering system used for serial publications.  A serial is defined as any publication issued in successive parts, usually bearing numerical or chronological designations and intended to be continued indefinitely.  Serials include periodicals, year-books, and monographic series.</p>
+</li>
+<li>
 <p>Can a publisher have both an ISBN and an ISSN?
 Both numbering systems are used for books in a series and with annuals or biennials.  The ISBN identifies the individual book in a series or a specific year for an annual or biennial.  The ISSN identifies the ongoing series, or the ongoing annual or biennial serial.  If a publication has both, each should be printed on the copyright page.</p>
+</li>
+<li>
 <p>Additional notes about ISBNs and Millennium:
 Beginning with the 2006 Release Millennium has a translator that will translate an ISBN-10 to an ISBN-13 and visa versa.  This was added as a way deal with the changeover to ISBN-13’s that began in January 2007.  (It is important to note that the ISBN-10 has no equivalent to an ISBN-13 beginning with 979 and visa versa.)</p>
+</li>
+</ul>
 <p>Currently we are getting cover images of items displayed in the WebOPAC from Amazon through the use of the ISBN.  Unfortunately it only seems to work off the ISBN-10 at the current time, so in order for the cover image to show up in the WebOPAC the ISBN-10 needs to be the first listed 020.  (It is possible to move this up the list without retyping it by placing your cursor on the one you want to move and using the “Move Up” or “Move to Top of Group” found in the “Edit” menu.)</p>
-<p><a name="catm_keyboard_commands"></a>
-Editing Commands for MARC Records</p>
+<p><a name="catm_keyboard_commands"></a></p>
+<h4 id="editing-commands-for-marc-records">Editing Commands for MARC Records</h4>
 <p>Keyboard commands</p>
-<p>To Add a Field/Row                      Control Enter</p>
-<p>Position the cursor on the field that you want below the new field.</p>
-<p>To Add a Subfield Delimiter                 Control D
-You must add the letter/number of the subfield yourself.</p>
-<p>To Remove Field/Row                     Control Delete</p>
-<p>To Remove a Subfield Delimiter and value            Shift Delete</p>
-<p>The system will not allow the final subfield to be deleted. You must delete entire field to delete.</p>
-<p>Right Click Commands</p>
-<p>You can also add a blank field by right clicking on the field that would be below the new field and clicking on Add Field. To add a particular field, click on the value in the drop-down menu.</p>
-<p>To delete a field, right click on the field itself. </p>
-<p>To Insert a Field/Row                       Control Shift Enter</p>
-<p>This works particularly well when you want to insert a field between the 008 field and the next field (below the 008 field).</p>
-<p><a name="catm_matching_standards"></a>
-STANDARDS FOR MATCHING TO DATABASE RECORDS
-Developed by Cataloging Work Team, 2002</p>
-<p>ISBN
-    This is a good way to search to find a possible match in the database.  Every other part of the record must then match to accept the record.  Sometimes ISBN’s may match what is in the book but the edition will still be a mismatch. Examples are: Large print books and book club editions. Then search by title.</p>
-<p>TITLE/AUTHOR
-    Title must match exactly up to the first five words. Also check the subtitle.  If present, it will be after the colon.  Following the forward slash is a statement of responsibility for the item.  It may be the author, an editor or a corporate body.  This name will also be listed in another tag as the author, alternate author or corporate body.  </p>
-<p>IMPRINT
-    This tag lists place of publication, publisher and date of publication.
-Dates may not be the best indicator of a match because some catalogers inadvertently enter the date of printing rather than first publication date. However, if the dates do match, and the publisher is the same,  that is a good indication for matching.  If you have the item in hand, be sure you are looking at publishing date rather than date of printing.  The copyright date, if present, indicates the original date of publication, no matter what the publication date of the item in hand.  Later printings of an edition are a match; the printing date may or may not be part of the 260 field.</p>
-<pre><code>Place of publication should match if publishing dates are alike.  If there is a later printing date, the place and publisher may be different.  If that place and publisher are a subgroup of the original publisher or bought out the original publisher; and if the edition essentially comes from the same set of printing plates, such that pages are completely interchangeable between them, then it is the same edition.  If it is a completely different publisher from the same set of printing plates, this would be a different edition, noted by “Reprint.  Originally published: [place] : [Publisher] ; [date]” in the 500 field.
+<ul>
+<li>
+<p>To Add a Field/Row</p>
+<pre><code>Control Enter
 </code></pre>
-<p>PHYSICAL DESCRIPTION
-    If the page numbers match, great.  If they don’t, it may be due to clerical error. For example, AACR2 states that the page number listed is the last page printed in the book.  If two or three pages follow, some catalogers may incorrectly add these to the last printed page number.  If you see numbers that are very close and all other criteria match, you should assume you have a match.  If numbers vary by more than a few, you probably don’t have a match.  The best example of this, where everything is the same except the number of pages, is a book club edition put out simultaneously by the publisher(s).  These editions are smaller, the type is smaller, the number of pages is usually smaller; this means that one cannot replace a page of one with the other, and in replacement the book club edition is significantly less valuable than the trade edition.  These editions should not be placed on the same record. </p>
-<p><a name="catm_monograph_standards"></a>
-RECOMMENDED STANDARDS FOR BIBLIOGRAPHIC RECORDS – SPECIFIC TO BOOKS (MONOGRAPHS)
-Developed by Cataloging Work Team, 2002; rev. 2004; rev. 2007</p>
-<p>Notes:<br />
-1) The chief sources of information for each field for book records are listed in AACR2R. The chief source of information for printed monographs is the title page or, if there is no title page, the source from within the publication that is used as a substitute for it.  For printed monographs published without a title page, or without a title page applying to the whole work (as in the case of some editions of the Bible and some bilingual dictionaries), use the part of the item supplying the most complete information, whether this be the cover (excluding a separate book jacket), caption, colophon, running title, or other part.  Specify the part used as a title page substitute in a note.  If no part of the item supplies data that can be used as the basis of the description, take the necessary information from any available source.  If the information traditionally given on the title page is given on facing pages or on pages on successive leaves, with or without repetition, treat those pages as the title page.</p>
-<p>The prescribed source(s) of information for each area of the description of printed 
-monographs is set out below.  Enclose information taken from outside the prescribed 
-source(s) in square brackets.
-    AREA                    PRESCRIBED SOURCES OF INFORMATION
-    Title and statement of responsibility   Title page*
-Edition                 Title page, other preliminaries, colophon<strong>
-Publication, distribution, etc.     Title page, other preliminaries, colophon
-        Physical description            The whole publication
-    Series                  Series title page, monograph title page, 
-cover, rest of publication
-        Note                    Any source
-        Standard number &amp; terms of      Any source
-            availability
-*Title page includes a substitute.
-</strong>[Colophon: an inscription placed at the end of a book or manuscript usually with facts relative to its production; an identifying device used by a printer or a publisher]
-2) Although shown for clarity, subfield |a sometimes does not show on MARC record in initial instance of use. 
-3) Some subfields are repeatable and some are not. Check AACR2R if in doubt.
-4) Colon space and Semicolon space precede some fields and are required formatting.  (Refer to note that follows.)
-5) In some cataloging utilities subfield delimiters take the place of spaces when shown and additional spaces to meet AACR2R requirements should not be added; in other words, without subfields the space it occupied remains in the visible record.  (This is how the Sage Library System automation handles this and so the examples throughout this document follow this principle, though the punctuation section lists the AACR2R rules.)  OCLC records are an exception: when the subfield delimiters are suppressed in the display they do not leave the space they occupied behind.<br />
-For example, 300 p.:|bill. ;|c25 cm. and  300 p. : |bill. ; |c25 cm. (OCLC) 
-would both display as  300 p. : ill. ; 25 cm.<br />
-Check out your own utility to see how they handle this.
-6) The symbol | (pipe) represents the subfield delimiter in these standards. In OCLC records you see the symbol $ (dollar sign).
-7) If an item is a continuation that is updated regularly (could be annually or more frequently) then attach to a bib with an “open entry” nature (serials, etc., e.g. Fodor’s).  (Refer to “Serials” for additional instructions.)</p>
-<p>010 LCCN NUMBER (Optional)
+<p>Position the cursor on the field that you want below the new field.</p>
+</li>
+<li>
+<p>To Add a Subfield Delimiter</p>
+<pre><code>Control D
+</code></pre>
+<p>You must add the letter/number of the subfield yourself.</p>
+</li>
+<li>
+<p>To Remove Field/Row</p>
+<pre><code>Control Delete
+</code></pre>
+</li>
+<li>
+<p>To Remove a Subfield Delimiter and value</p>
+<pre><code>Shift Delete
+</code></pre>
+</li>
+</ul>
+<p>The system will not allow the final subfield to be deleted. You must delete entire field to delete.</p>
+<ul>
+<li>Right Click Commands</li>
+</ul>
+<p>You can also add a blank field by right clicking on the field that would be below the new field and clicking on Add Field. To add a particular field, click on the value in the drop-down menu.</p>
+<ul>
+<li>
+<p>To delete a field, right click on the field itself. </p>
+</li>
+<li>
+<p>To Insert a Field/Row</p>
+<pre><code>Control Shift Enter
+</code></pre>
+</li>
+</ul>
+<p>This works particularly well when you want to insert a field between the 008 field and the next field (below the 008 field).</p>
+<p><a name="catm_matching_standards"></a></p>
+<h4 id="standards-for-matching-to-database-records">STANDARDS FOR MATCHING TO DATABASE RECORDS</h4>
+<ul>
+<li>
+<p>Developed by Cataloging Work Team, 2002</p>
+</li>
+<li>
+<p>ISBN
+This is a good way to search to find a possible match in the database.  Every other part of the record must then match to accept the record.  Sometimes ISBN’s may match what is in the book but the edition will still be a mismatch. Examples are: Large print books and book club editions. Then search by title.</p>
+</li>
+<li>
+<p>TITLE/AUTHOR
+Title must match exactly up to the first five words. Also check the subtitle.  If present, it will be after the colon.  Following the forward slash is a statement of responsibility for the item.  It may be the author, an editor or a corporate body.  This name will also be listed in another tag as the author, alternate author or corporate body.  </p>
+</li>
+<li>
+<p>IMPRINT
+This tag lists place of publication, publisher and date of publication.</p>
+</li>
+</ul>
+<p>Dates may not be the best indicator of a match because some catalogers inadvertently enter the date of printing rather than first publication date. However, if the dates do match, and the publisher is the same,  that is a good indication for matching.  If you have the item in hand, be sure you are looking at publishing date rather than date of printing.  The copyright date, if present, indicates the original date of publication, no matter what the publication date of the item in hand.  Later printings of an edition are a match; the printing date may or may not be part of the 260 field.</p>
+<p>Place of publication should match if publishing dates are alike.  If there is a later printing date, the place and publisher may be different.  If that place and publisher are a subgroup of the original publisher or bought out the original publisher; and if the edition essentially comes from the same set of printing plates, such that pages are completely interchangeable between them, then it is the same edition.  If it is a completely different publisher from the same set of printing plates, this would be a different edition, noted by “Reprint.  Originally published: [place] : [Publisher] ; [date]” in the 500 field.</p>
+<ul>
+<li>PHYSICAL DESCRIPTION
+If the page numbers match, great.  If they don’t, it may be due to clerical error. For example, AACR2 states that the page number listed is the last page printed in the book.  If two or three pages follow, some catalogers may incorrectly add these to the last printed page number.  If you see numbers that are very close and all other criteria match, you should assume you have a match.  If numbers vary by more than a few, you probably don’t have a match.  The best example of this, where everything is the same except the number of pages, is a book club edition put out simultaneously by the publisher(s).  These editions are smaller, the type is smaller, the number of pages is usually smaller; this means that one cannot replace a page of one with the other, and in replacement the book club edition is significantly less valuable than the trade edition.  These editions should not be placed on the same record. </li>
+</ul>
+<p><a name="catm_monograph_standards"></a></p>
+<h5 id="recommended-standards-for-bibliographic-records-specific-to-books-monographs">RECOMMENDED STANDARDS FOR BIBLIOGRAPHIC RECORDS – SPECIFIC TO BOOKS (MONOGRAPHS)</h5>
+<ul>
+<li>Developed by Cataloging Work Team, 2002; rev. 2004; rev. 2007</li>
+</ul>
+<p>Notes:  </p>
+<ol>
+<li>The chief sources of information for each field for book records are listed in AACR2R. The chief source of information for printed monographs is the title page or, if there is no title page, the source from within the publication that is used as a substitute for it.  For printed monographs published without a title page, or without a title page applying to the whole work (as in the case of some editions of the Bible and some bilingual dictionaries), use the part of the item supplying the most complete information, whether this be the cover (excluding a separate book jacket), caption, colophon, running title, or other part.  Specify the part used as a title page substitute in a note.  If no part of the item supplies data that can be used as the basis of the description, take the necessary information from any available source.  If the information traditionally given on the title page is given on facing pages or on pages on successive leaves, with or without repetition, treat those pages as the title page.</li>
+</ol>
+<p>The prescribed source(s) of information for each area of the description of printed monographs is set out below.  Enclose information taken from outside the prescribed source(s) in square brackets.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Prescribed Sources Of Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title and statement of responsibility</td>
+<td>Title page*</td>
+</tr>
+<tr>
+<td>Edition</td>
+<td>Title page, other preliminaries, colophon**</td>
+</tr>
+<tr>
+<td>Publication, distribution, etc.</td>
+<td>Title page, other preliminaries, colophon</td>
+</tr>
+<tr>
+<td>Physical description</td>
+<td>The whole publication</td>
+</tr>
+<tr>
+<td>Series</td>
+<td>Series title page, monograph title page, cover, rest of publication</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>Any source</td>
+</tr>
+<tr>
+<td>Standard number &amp; terms of availability</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Title page includes a substitute.
+</em>*[Colophon: an inscription placed at the end of a book or manuscript usually with facts relative to its production; an identifying device used by a printer or a publisher]</p>
+<ol>
+<li>Although shown for clarity, subfield |a sometimes does not show on MARC record in initial instance of use. </li>
+<li>Some subfields are repeatable and some are not. Check AACR2R if in doubt.</li>
+<li>Colon space and Semicolon space precede some fields and are required formatting.  (Refer to note that follows.)</li>
+<li>
+<p>In some cataloging utilities subfield delimiters take the place of spaces when shown and additional spaces to meet AACR2R requirements should not be added; in other words, without subfields the space it occupied remains in the visible record.  (This is how the Sage Library System automation handles this and so the examples throughout this document follow this principle, though the punctuation section lists the AACR2R rules.)  OCLC records are an exception: when the subfield delimiters are suppressed in the display they do not leave the space they occupied behind.
+For example:</p>
+<p>300 p.:|bill. ;|c25 cm. and  300 p. : |bill. ; |c25 cm. (OCLC) </p>
+</li>
+</ol>
+<p>would both display as:  300 p. : ill. ; 25 cm.  </p>
+<p>Check out your own utility to see how they handle this.</p>
+<ol>
+<li>The symbol | (pipe) represents the subfield delimiter in these standards. In OCLC records you see the symbol $ (dollar sign).</li>
+<li>
+<p>If an item is a continuation that is updated regularly (could be annually or more frequently) then attach to a bib with an “open entry” nature (serials, etc., e.g. Fodor’s).  (Refer to “Serials” for additional instructions.)</p>
+</li>
+<li>
+<p>010   LCCN NUMBER (Optional)
 Library of Congress control numbers (LCCN) (formerly called Library of Congress Card Number) are assigned by the Library of Congress and are supposed to be unique.  They are therefore one of the most important match keys when trying to detect duplicate bibliographic records.  However, publishers do not understand that LCCN are supposed to be unique.  They print the same LCCN on different editions of a work, therefore caution should be exercised in using this as a match point.</p>
+</li>
+</ol>
 <p>LCCN’s must be entered “normalized” according to one of the two formats below.  If you are using OCLC, it does the normalization for you.</p>
 <p>There are two LCCN structures: structure A for numbers formed from 1898 through 2000, in which the year portion consists of two digits; and structure B for numbers formed beginning in 2001, in which the year portion consists of four digits.</p>
-<p>Structure A LCCN “normalization”:
-•   a lower case, left-justified, alphabetic prefix to a maximum of three characters or three blank spaces – these prefixes and leading spaces are very important and must be retained
-•   two digits meaning the year in which the item was cataloged
-•   a six digit, zero-filled, sequential serial number
-•   a blank space
-•   variable suffixes/alphabetic identifier and revision dates, preceded by slashes
-•   total length should be 8 digits (plus any prefixes and/or suffixes)</p>
-<p>The number in printed form may look like these:
-    85-8191 agr23-452   46-8246 /MN/AC<br />
-The above numbers normalized would look like these (^ represents a blank space):
-    |a^^^85008191^<br />
-    |aagr23000452^
-    |a^^^46008246^/MN/AC</p>
-<p>Structure B LCCN “normalization”:
-•   a lower case, left-justified, alphabetic prefix to a maximum of two characters or two spaces
-•   four digits meaning the year in which the item was cataloged
-•   a six digit, zero-filled, sequential serial number
-•   total length should be 10 digits (plus any prefixes)</p>
+<p>Structure A LCCN “normalization”:</p>
+<ul>
+<li>a lower case, left-justified, alphabetic prefix to a maximum of three characters or three blank spaces – these prefixes and leading spaces are very important and must be retained</li>
+<li>two digits meaning the year in which the item was cataloged</li>
+<li>a six digit, zero-filled, sequential serial number</li>
+<li>a blank space</li>
+<li>variable suffixes/alphabetic identifier and revision dates, preceded by slashes</li>
+<li>total length should be 8 digits (plus any prefixes and/or suffixes)</li>
+</ul>
+<p>The number in printed form may look like these:</p>
+<p>85-8191 agr23-452   46-8246 /MN/AC  </p>
+<p>The above numbers normalized would look like these (^ represents a blank space):</p>
+<pre><code>|a^^^85008191^  
+|aagr23000452^
+|a^^^46008246^/MN/AC
+</code></pre>
+<p>Structure B LCCN “normalization”:</p>
+<ul>
+<li>a lower case, left-justified, alphabetic prefix to a maximum of two characters or two spaces</li>
+<li>four digits meaning the year in which the item was cataloged</li>
+<li>a six digit, zero-filled, sequential serial number</li>
+<li>total length should be 10 digits (plus any prefixes)</li>
+</ul>
 <p>The number in printed form may look like these:
     n2001-50284     2002-378    my2001-50268
 The above numbers normalized would look like these (^ represents a blank space):
