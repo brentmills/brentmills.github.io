@@ -42,3 +42,8 @@ code {
 .wy-side-nav-search {
 	background-color:green;
 }
+
+/* So the text spans the page */
+.wy-nav-content {
+	max-width:inherit;
+}
