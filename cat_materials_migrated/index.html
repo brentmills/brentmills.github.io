@@ -803,7 +803,7 @@ If the page numbers match, great.  If they don’t, it may be due to clerical er
 <li>The symbol | (pipe) represents the subfield delimiter in these standards. In OCLC records you see the symbol $ (dollar sign).</li>
 <li>If an item is a continuation that is updated regularly (could be annually or more frequently) then attach to a bib with an “open entry” nature (serials, etc., e.g. Fodor’s).  (Refer to “Serials” for additional instructions.)</li>
 </ol>
-<p>010 LCCN NUMBER (Optional)
+<p><code>010</code>   LCCN NUMBER (Optional)
 Library of Congress control numbers (LCCN) (formerly called Library of Congress Card Number) are assigned by the Library of Congress and are supposed to be unique.  They are therefore one of the most important match keys when trying to detect duplicate bibliographic records.  However, publishers do not understand that LCCN are supposed to be unique.  They print the same LCCN on different editions of a work, therefore caution should be exercised in using this as a match point.</p>
 <p>LCCN’s must be entered “normalized” according to one of the two formats below.  If you are using OCLC, it does the normalization for you.</p>
 <p>There are two LCCN structures: structure A for numbers formed from 1898 through 2000, in which the year portion consists of two digits; and structure B for numbers formed beginning in 2001, in which the year portion consists of four digits.</p>
@@ -837,22 +837,22 @@ The above numbers normalized would look like these (^ represents a blank space):
 |a^^2002000378
 |amy2001050268
 </code></pre>
-<p>020 ISBN NUMBER (Optional)    <br />
+<p><code>020</code>   ISBN NUMBER (Optional)    <br />
 An ISBN is a unique number assigned to an item by its publisher.  Each ISBN number is a ten-digit number and has four parts, or a thirteen-digit number and has five parts.  If printed in a book, the four/five parts are separated by hyphens.  Enter without hyphens and add any qualifiers that describe the item.</p>
 <pre><code>|a2214306080
 |a0842270884 (pbk.)
 |a9780545010221
 </code></pre>
 <p>Note:  Although this number is supposed to be unique, it often is not so caution should be exercised in using this as a match point.</p>
-<p>040 CATALOGING SOURCE (Required)
+<p><code>040</code>   CATALOGING SOURCE (Required)
 Original source of the cataloging data (subfield |a), contributor of cataloging data, and if applicable, the modifier of cataloging data (subfield |d).  Use OCLC or USMARC code that uniquely identifies your location.  (See OCLC code list).  For example:</p>
 <pre><code>|aOXU 
 |aUMT   |dLGRND
 </code></pre>
-<p>092 LOCALLY ASSIGNED DEWEY CALL NUMBER (Insert in item record to display in catalog)
+<p><code>092</code>   LOCALLY ASSIGNED DEWEY CALL NUMBER (Insert in item record to display in catalog)
 Call numbers based on Dewey Decimal Classification.  </p>
-<p>099 LOCALLY FREE-TEXT CALL NUMBER (Insert in item record to display in catalog)</p>
-<p>100 MAIN ENTRY – PERSONAL NAME (Required if present)
+<p><code>099</code>   LOCALLY FREE-TEXT CALL NUMBER (Insert in item record to display in catalog)</p>
+<p><code>100</code>   MAIN ENTRY – PERSONAL NAME (Required if present)
 A personal name is the name of the person responsible for the creation of the intellectual or artistic content of an item as prominently displayed.  Use of this field relates to the statement of responsibility as found following title.  For an editor, use Marc tag 700 rather than this tag.  Do not use this tag for a corporation or organization given in statement of responsibility.  Just use title entry instead and trace corporate authors in 710. (Field 110 is used for Corporate Author main entry only if document is internal corporate document.)  It is best to match names to authority files already in use.  To do this, you can search the Sage, Summit or Library of Congress databases using the author search selection for the author listed in item being cataloged.  Then select one record by author and convert to a Marc Tag display.  Fill in spelling and dates given. Use subfield |a for name, subfield |q for expanded name, and subfield |d for date, if available.</p>
 <p>This field may be used only once.  Additional authors go in 700 field.</p>
 <pre><code>|aCarroll, Lewis
@@ -866,8 +866,8 @@ subfield |c is preceded by a comma space
 subfield |d is preceded by a comma space
 subfield |q is preceded by a space only and placed in parentheses
 100 field ends with a mark of punctuation or a closing parenthesis “)”</p>
-<p>110 This field is used for Corporate Author main entry only if document is internal corporate document. To trace a corporate entity otherwise related to the work, generally use 610 field if subject and 710 field if not.</p>
-<p>245 TITLE STATEMENT (Required)
+<p><code>110</code> This field is used for Corporate Author main entry only if document is internal corporate document. To trace a corporate entity otherwise related to the work, generally use 610 field if subject and 710 field if not.</p>
+<p><code>245</code>   TITLE STATEMENT (Required)
 The title statement is the title proper and may also include a general material designation (form if other than book, i.e. [text (large print)]), subtitle, other title information, and the statement of responsibility (name of author or editor).  If you need to use a general material designation, use subfield |h after subfield |a.  A list of approved designations is included in Attachment 1.</p>
 <p>The first indicator should be 1 if MarcTag 100 (author) is used.  Otherwise use 0. For second indicator use 0 if title does not begin with an article.  Use 1-9 to indicate an article, plus spaces, punctuation, diacritics and underscores that precede the first significant word.  </p>
 <p>For title use subfield |a</p>
@@ -892,11 +892,11 @@ The title statement is the title proper and may also include a general material 
 <p>Punctuation: 
 subfield |b is preceded by space colon space
 subfield |c (statement of responsibility) is preceded by space forward-slash space, each subsequent statement of responsibility is preceded by space semicolon space subfield |h is preceded by a space only and is enclosed in brackets. 245 field ends with a period. </p>
-<p>246 VARIANT TITLE (Optional) (prior to 1995, placed in 740 field).
+<p><code>246</code>   VARIANT TITLE (Optional) (prior to 1995, placed in 740 field).
 Examples are caption titles, spine titles, running titles.</p>
 <p>Punctuation: 
 See rules for 245 field. No ending punctuation is added to a 246 field. </p>
-<p>250 EDITION STATEMENT (Required if applicable)
+<p><code>250</code>   EDITION STATEMENT (Required if applicable)
 Refer to the edition statement proper and any other information up to the imprint.  Use only if the edition statement is self-defining, that is uses words such as edition, issue, version.  Numbers may appear with an edition statement. For items that use revised alone use abbreviation Rev. as in example.  If you are aware that an item is a revision but is not shown in book, you may put Rev. in square brackets per example.  Use subfield |a for edition statement</p>
 <pre><code>|aEd. 1965-66.
 |a1st ed., corr. printing.
@@ -906,7 +906,7 @@ Refer to the edition statement proper and any other information up to the imprin
 |a[Book club ed.].
 </code></pre>
 <p>Punctuation:  250 field always ends with a period.</p>
-<p>260 PUBLICATION, DISTRIBUTION, IMPRINT (Required)
+<p><code>260</code>   PUBLICATION, DISTRIBUTION, IMPRINT (Required)
 The imprint statement may include place of publication, publisher, place of distribution, distributor (if given), date of publication, copyright date.  Use square brackets to correct erroneous information or for clarification.  No indicators are assigned.</p>
 <p>PLACE OF PUBLICATION
 Use subfield |a for place of publication.  Supply the name of the country, or state or province for U.S. or Canadian publishers respectively, if it is considered necessary for identification or distinction and enclose in parentheses if not stated in chief source of information (see Note #1).  Use abbreviations supplied in Attachment 2.</p>
@@ -949,7 +949,7 @@ Use the publishing date and/or copyright date on the title or preliminary pages.
 <p>Note:  small c precedes a copyright date, not to be confused with subfield |c.  </p>
 <p>Punctuation:
 within 260 subfield |a (place of publication), space semicolon space precedes a second place name in a separate subfield |a space colon space precedes each subfield |b (publisher) comma space precedes subfield |c (date) end 260 subfield |c with a period, unless another mark of  punctuation (such as a bracket or hyphen) is present</p>
-<p>300 PHYSICAL DESCRIPTION OF THE ITEM (Required)
+<p><code>300</code>   PHYSICAL DESCRIPTION OF THE ITEM (Required)
 Use subfield |a for pagination. Enter data in terms of paging and/or number of volumes.  Pagination includes last printed page number in book.  Do not count any additional unnumbered pages, unless they contain material mentioned in subfield |b, such as maps.  If no pages are numbered, you may count and put number in brackets [35] p., estimate number of pages and precede number with ca. (for circa) or state (unpaged) in parentheses after number of unpaged volumes. If Arabic numbered pages begin with 1 and are preceded by Roman numbered pages, list both sequentially, otherwise ignore Roman numbered pages.</p>
 <pre><code>|a327 p.
 |a3 v.
@@ -977,7 +977,7 @@ Use subfield |a for pagination. Enter data in terms of paging and/or number of v
 space colon space precedes subfield |b
 space semicolon space precedes subfield |c
 end 300 field with a period (usually already present) </p>
-<p>440 SERIES STATEMENT  (Required if applicable)
+<p><code>440</code>   SERIES STATEMENT  (Required if applicable)
 Use for series statements to be traced by a series title.  A tracing refers to an access point in the catalog for the series title.  Look in Sage, Summit or Library of Congress databases under title to check for the correct form of the tracing (the authority record).  </p>
 <p>(If you choose not to trace a series statement or to trace it differently use tag 490. A 490 tag is used if series author is listed or if entire series is known to be by the author of the book in hand.)</p>
 <p>Use 440 tag if series does not list an exclusive author, e.g. the series is a publisher’s series and the series statement transcribed exactly as given on the resource matches the Library of Congress Authority file exactly..</p>
@@ -992,7 +992,7 @@ Use for series statements to be traced by a series title.  A tracing refers to a
 <p>Use subfield |x for ISSN number if available.  Subfield |x precedes subfield |v if present</p>
 <pre><code>|aEarth Science series,|x4522-1277 ;|vv. 12
 </code></pre>
-<p>490 SERIES STATEMENT (Required if applicable)
+<p><code>490</code>   SERIES STATEMENT (Required if applicable)
 Use 490 first indicator 0 if you do not trace; 490 first indicator 1 if you trace
 differently.  If you use a 490 1, an 800 field for the correct form of the tracing is required.  </p>
 <p>A first indicator of 0 indicates a series not traced. Use subfield |a for author or title.</p>
@@ -1006,7 +1006,7 @@ differently.  If you use a 490 1, an 800 field for the correct form of the traci
 No ending punctuation is added to 440 or 490 fields.
 440 or 490 subfield |v is always preceded by space semicolon space
 440 or 490 subfield |x is always preceded by a comma space</p>
-<p>500 GENERAL NOTES (If Needed)
+<p><code>500</code>   GENERAL NOTES (If Needed)
 General notes are notes for bibliographic data not present elsewhere in the record or information that is present elsewhere but must be repeated in field 500 to provide an intelligible note.   May be used for informal contents note.  General notes include: bibliographic history of the work, translation notes, enhancements to the physical description, program notes. A note must be added to identify source of a tracing if not otherwise in record.</p>
 <p>Examples:</p>
 <pre><code>|aBased on the screenplay: All my sons.
@@ -1021,7 +1021,7 @@ General notes are notes for bibliographic data not present elsewhere in the reco
 |a“Advanced reader” —cover
 </code></pre>
 <p>Punctuation:  Always end field with a period.</p>
-<p>504 BIBLIOGRAPHY NOTE (If needed)
+<p><code>504</code>   BIBLIOGRAPHY NOTE (If needed)
 Note about bibliography, discography, filmography, and/or other bibliographic references in an item.</p>
 <p>Examples:</p>
 <pre><code>|aIncludes bibliography.
@@ -1029,7 +1029,7 @@ Note about bibliography, discography, filmography, and/or other bibliographic re
 |aDiscography: p. 150-152.
 </code></pre>
 <p>Punctuation:  Always end field with a period.</p>
-<p>505 CONTENTS NOTE (Optional)
+<p><code>505</code>   CONTENTS NOTE (Optional)
 Contents notes contain titles of separate works or parts of an item.  They may also include statements of responsibility associated with the works or parts of an item.  Volume numbers and other sequential designations are included in the note, but chapter numbers are omitted.  Use for analytical titles of independent works contained within the items and for titles of related items. This note may also contain statements of responsibility</p>
 <p>The first indicator is used to indicate type of contents note.  Use 0 for full contents.  Use 2 for partial contents.  Indicator 1 is used for incomplete contents, i.e., when all parts of a set are not published yet.  </p>
 <p>Use subfield |a for formatted contents note.  When all information is in subfield |a, the second indicator is blank.</p>
@@ -1049,7 +1049,7 @@ for miscellaneous information.  Any or all may be used. These subfields are repe
 (i.e. subfield takes the place of the space).  See Note #5 at beginning of manual.</p>
 <p>Punctuation:<br />
 space hyphen hyphen space ( -- ) is entered between each item statements of responsibility are preceded by space forward slash space ( / ) end field with a period or other ending punctuation or &gt; (angle bracket), but period after closing ] or ) – [but if note is incomplete or continues in the following 505 then none, unless the last word ends with its own punctuation]refer to AACR2 for punctuation for use of subfields |t, |r, and |g</p>
-<p>526 STUDY PROGRAM INFORMATION NOTE (Optional)
+<p><code>526</code>   STUDY PROGRAM INFORMATION NOTE (Optional)
 This field contains information about any study program(s) which use the work that is described by the record.  The field is repeatable. First indicator 0 is for reading program; second indicator is blank</p>
 <pre><code>|a Program name
 |b Interest level – assigned by the study program
@@ -1060,24 +1060,24 @@ This field contains information about any study program(s) which use the work th
 </code></pre>
 <p>Punctuation:<br />
 This field ends with a period unless another mark of punctuation is present.  If the final subfield is subfield |5, the mark of punctuation precedes that subfield.</p>
-<p>586 AWARDS NOTE  (Optional)
+<p><code>586</code>   AWARDS NOTE  (Optional)
 This field contains information on awards associated with the described item. The field is repeated for each occurrence of an award.</p>
 <p>The first indicator contains a value that controls the generation of a display constant preceding the note (a blank is used to generate the display constant Awards:, an 8 specifies no display constant is generated).  The second indicator position is undefined and contains a blank.  </p>
 <p>Use subfield |a for the awards note.</p>
 <p>Punctuation:
 No ending punctuation is added to 586 fields.</p>
-<p>6XX    SUBJECT HEADINGS (At least one subject heading is required for non-fiction.)  </p>
-<p>600 SUBJECT ADDED ENTRY-PERSONAL NAME
+<p><code>6XX</code>   SUBJECT HEADINGS (At least one subject heading is required for non-fiction.)  </p>
+<p><code>600</code>   SUBJECT ADDED ENTRY-PERSONAL NAME
 Use for personal names used as subject added entries such as:  names of persons who actually or probably lived, personal author/title subject added entries, and names of families. For example use for Burbank, Luther or Sacagawea.</p>
 <p>The first indicator is 1 for a single surname and 3 for a family name  The second indicator refers to subject authority on which you base the subject entry.  Use 0 for Library of Congress (LC) subject headings. </p>
 <p>This Marc tag needs to follow LC standards. Try finding a match from the Sage, Summit or Library of Congress databases. Enter names selected in the subject search in database. Try different selections until you find a possible fit.  Another way is to identify another book by the same author that has already been cataloged.  Look in the cataloged record for possible Subject Heading-Personal Name that would fit. When you have chosen a match, convert the catalog entry to a Marc Record. Enter into tag 600 exactly as you view in Marc format with the same indicators, and subfields.</p>
-<p>650     SUBJECT ADDED ENTRY – TOPICAL TERM
+<p><code>650</code>   SUBJECT ADDED ENTRY – TOPICAL TERM
 Use for topical subject entry assigned by LC or assigned by an agency based on LC or LC Annotated Card Program (Subject Headings for Children’s Literature).  This Marc tag needs to follow LC standards. Try finding a match from the Sage, Summit or Library of Congress databases. Enter words related to the subject of the book with the Subject search.  Try different words till you find a fit.  Another way is to identify another book by the same author that is similar in content and has already been cataloged.  Search for title and see if subject headings used will fit your item.  Convert chosen record to Marc Record.  Enter Marc tag indicator numbers and subfields exactly as you view them.  </p>
-<p>651 SUBJECT ADDED ENTRY – GEOGRAPHIC NAME
+<p><code>651</code>   SUBJECT ADDED ENTRY – GEOGRAPHIC NAME
 Use for geographic subject entries actually assigned by Library of Congress Subject Headings.  This would include place names such as Yellowstone National Park or Portland (Or.).  As above, would suggest searching Sage, Summit or Library of Congress databases. Search under Subject for geographic names.  If you find suitable subject entry, convert the entry to Marc Record and copy the indicators and subfields exactly as found.  </p>
 <p>Punctuation: 
 A period is placed at the end of the last subfield, unless it ends with a hyphen or parenthesis. (The dashes normally shown preceding subfields v, x, y, and z are not carried in a MARC record. They are inserted by computer programs for public display of record.)</p>
-<p>655 GENRE/FORM INDEX TERM (Optional)
+<p><code>655</code>   GENRE/FORM INDEX TERM (Optional)
 This field contains a term indicating the genre, form or physical characteristic of a resource (what a resource is about). First indicator is typically left blank; second indicator Use 4 if the source is not specified (including local headings)</p>
 <pre><code>655 _4 |aOregon authors.
 </code></pre>
@@ -1086,7 +1086,7 @@ This field contains a term indicating the genre, form or physical characteristic
 </code></pre>
 <p>Punctuation:<br />
 Subfield |a is preceded by a period </p>
-<p>700 ADDED ENTRY – PERSONAL NAME  (Added title optional)
+<p><code>700</code>   ADDED ENTRY – PERSONAL NAME  (Added title optional)
 Make an added personal name entry under the heading for a prominently named editor or compiler of monographic work.  Make an added personal name entry for an illustrator if the illustrations are considered to be an important feature of the work.  Make an added personal name entry for any other name that would provide an important access point not treated in another entry. It is best to match names to authority files already in use.  To do this, you can search the Sage, Summit, or Library of Congress databases. Using the author search selection choose the individual listed in item being cataloged.  Convert selected record to Marc Record and follow spelling and dates given there to fill in this Marc tag. </p>
 <p>For first indicator, use 0 for a recognized forename such as Plato.  Use 1 for usual surname entries.  Use second indicator if adding a title, using 2. Use subfield |a for name and use subfield |d for dates if known</p>
 <pre><code>700 1   |aHemingway, Ernest,|d1899-1961.
@@ -1096,12 +1096,12 @@ Make an added personal name entry under the heading for a prominently named edit
 <pre><code>700 12  |aBeethoven, Ludwig van,|d1770-1827.|tC major symphony.
 </code></pre>
 <p>Punctuation:  End field with a period.</p>
-<p>740 TITLE ADDED ENTRY (Optional)
+<p><code>740</code>   TITLE ADDED ENTRY (Optional)
 Variant titles appear in field 246.
 Use for tracing specific titles in 505 contents note.
 Use for titles recorded in 245 subfield |b if desired.</p>
 <p>Punctuation:  End field with a period unless other form of punctuation is present.</p>
-<p>800 SERIES ADDED ENTRY – PERSONAL NAME/TITLE (Required if 490 1  field present)
+<p><code>800</code>   SERIES ADDED ENTRY – PERSONAL NAME/TITLE (Required if 490 1  field present)
 This field is used when all books in a series are written by the same author. Follow all rules for entry of author in 100 field. Title is added in subfield |t.  (It will be traced in online catalog). If volume number is present it is added in subfield |v.</p>
 <pre><code>800 1  |aGellerman, Paul.|tGellerman effective supervision studies ;|vno. 12.
 </code></pre>
@@ -1109,7 +1109,7 @@ This field is used when all books in a series are written by the same author. Fo
 Subfield |t is preceded by a period space.
 Subfield |v is preceded by space semicolon space.
 Field ends with a period.</p>
-<p>9XX LOCAL USE TAGS
+<p><code>9XX</code>   LOCAL USE TAGS
 Check with Sage System staff if you choose to use any of these fields. </p>
 <p>Use the following for tagging incomplete bib records.
 999   |aFLAGGED</p>
@@ -1361,13 +1361,13 @@ For example,  300 p. :|bill. ;|c25 cm. and  300 p. : |bill. ; |c25 cm. (OCLC) wo
 <p>The symbol | (pipe) represents the subfield delimiter in these standards. In OCLC records you see the symbol $ (dollar sign).</p>
 </li>
 </ol>
-<p>020 ISBN NUMBER (Optional)    <br />
+<p><code>020</code>   ISBN NUMBER (Optional)    <br />
 An ISBN is a unique number assigned to an item by its publisher.  Each ISBN number is a ten-digit number and has four parts.  Enter without hyphens and add any qualifiers that describe the item.</p>
 <pre><code>|a1590868188
 |a1559351500 (set)
 </code></pre>
 <p>Note:  Although this number is supposed to be unique, it often is not, so caution should be exercised in using this as a match point.</p>
-<p>024 OTHER STANDARD IDENTIFIER (Optional)
+<p><code>024</code>   OTHER STANDARD IDENTIFIER (Optional)
 A standard number or code published on an item which cannot be accommodated in another field.  The type of standard number or code is identified in the first indicator position or in subfield |2 (Source of number or code).</p>
 <p>1st indicator – Type of standard number or code</p>
 <pre><code>0 – International Standard Recording Code (ISRC)    
@@ -1395,7 +1395,7 @@ A standard number or code published on an item which cannot be accommodated in a
 024 3_ |a9781578155293
 024 3_ |a9780553528152|d52595
 </code></pre>
-<p>028 PUBLISHER NUMBER (Optional)
+<p><code>028</code>   PUBLISHER NUMBER (Optional)
 The formatted number used for sound recordings, printed music, and videorecordings. Publisher’s numbers that are given in an unformatted form are recorded in field 500 (General Note).  A print constant identifying the kind of publisher number may be generated based on the value in the first indicator position.</p>
 <p>1st indicator –                     2nd indicator –
 Type of publisher number            Note/added entry controller</p>
@@ -1420,9 +1420,9 @@ Original source of the cataloging data (subfield |a), contributor of cataloging 
 |aUMT
 |dLGRND
 </code></pre>
-<p>092 LOCALLY ASSIGNED DEWEY CALL NUMBER (Optional - This field does not show up on database)
+<p><code>092</code>   LOCALLY ASSIGNED DEWEY CALL NUMBER (Optional - This field does not show up on database)
 Call numbers based on Dewey Decimal Classification.  </p>
-<p>099 LOCALLY FREE-TEXT CALL NUMBER (Optional - This field does not show up on database)</p>
+<p><code>099</code>   LOCALLY FREE-TEXT CALL NUMBER (Optional - This field does not show up on database)</p>
 <p>100 MAIN ENTRY – PERSONAL NAME (Required if present)
 A personal name is the name of the person responsible for the creation of the intellectual or artistic content of an item as prominently displayed.  Use of this field relates to the statement of responsibility as found following title.  For an editor, use Marc tag 700 rather than this tag.  Do not use this tag for a corporation or organization given in statement of responsibility.  Just use title entry instead and trace corporate authors in 710. It is best to match names to authority files already in use.  To do this, you can search the Pioneer, Orbis or Library of Congress databases using the author search selection for the author listed in item being cataloged.  Then select one record by author and convert to a Marc Tag display.  Fill in spelling and dates given. Use subfield |a for name, subfield |q for expanded name, and subfield |d for date, if available.</p>
 <p>This field may be used only once.  Additional authors go in 700 field.</p>
@@ -1437,7 +1437,7 @@ subfield |c is preceded by a comma space
 subfield |d is preceded by a comma space
 subfield |q is preceded by a space only and placed in parentheses
 100 field ends with a mark of punctuation or a closing parenthesis “)”</p>
-<p>245 TITLE STATEMENT (Required)
+<p><code>245</code>   TITLE STATEMENT (Required)
 The title statement is the title proper and may also include a general material designation (form if other than book, i.e. sound recording), subtitle, other title information, and the statement of responsibility (name of author or editor).  If you need to use a general material designation, use subfield |h after subfield |a.  A list of approved designations is included in Attachment 1 of “Recommended Standards for Bibliographic Records: Developed by Cataloging Work Team, 2002.”</p>
 <p>The first indicator should be 1 if MarcTag 100 (author) is used.  Otherwise use 0.
 For second indicator use 0 if title does not begin with an article.  Use 1-9 to indicate an article, plus spaces, punctuation, diacritics and underscores that precede the first significant word.  </p>
@@ -1461,17 +1461,17 @@ having artistic and/or intellectual responsibility) in the form in which they ap
 <p>Punctuation: </p>
 <p>subfield |b is preceded by space colon space
 subfield |c (statement of responsibility) is preceded by space forward-slash space, each subsequent statement of responsibility is preceded by space semicolon space subfield |h is preceded by a space only and is enclosed in brackets. 245 field ends with a period. </p>
-<p>246 VARIANT TITLE (Optional) (prior to 1995, placed in 740 field).
+<p><code>246</code>   VARIANT TITLE (Optional) (prior to 1995, placed in 740 field).
 Examples are other titles, caption titles, spine titles, running titles.</p>
 <p>Punctuation: 
 See rules for 245 field. No ending punctuation is added to a 246 field. </p>
-<p>250 EDITION STATEMENT (Required if applicable)
+<p><code>250</code>   EDITION STATEMENT (Required if applicable)
 Refer to the edition statement proper and any other information found in the prescribed sources of information (see note #1 on page 1).  Use only if the edition statement is self-defining, that is uses words such as edition, issue, version.  Numbers may appear with an edition statement. For items that use revised alone use abbreviation Rev. as in example.  Use subfield |a for edition statement</p>
 <pre><code>|aRev. ed.
 |a[Rev.].
 </code></pre>
 <p>Punctuation:  250 field always ends with a period.</p>
-<p>260 PUBLICATION, DISTRIBUTION, IMPRINT (Required)
+<p><code>260</code>   PUBLICATION, DISTRIBUTION, IMPRINT (Required)
 The imprint statement may include place of publication, publisher, place of distribution, distributor (if given), date of publication, copyright date.  Use square brackets to correct erroneous information or for clarification.  No indicators are assigned.</p>
 <p>PLACE OF PUBLICATION
 Use subfield |a for place of publication.  Supply the name of the country, or state or province for U.S. or Canadian publishers respectively, if it is considered necessary for identification or distinction and enclose in parentheses if not stated in prescribed sources of information (see note #1 on page 1).  Use abbreviations supplied in Attachment 2 of “Recommended Standards for Bibliographic Records: Developed by Cataloging Work Team, 2002.”</p>
@@ -1515,7 +1515,7 @@ Use the publishing date and/or copyright date from the prescribed sources of inf
 Note:  small c precedes a copyright date, not to be confused with subfield |c.  </p>
 <p>Punctuation:
 within 260 subfield |a (place of publication), space semicolon space precedes a second place name in a separate subfield |a space colon space precedes each subfield |b (publisher) comma space precedes subfield |c (date) end 260 subfield |c with a period, unless another mark of punctuation (such as a bracket or hyphen) is present</p>
-<p>300 PHYSICAL DESCRIPTION OF THE ITEM (Required)
+<p><code>300</code>   PHYSICAL DESCRIPTION OF THE ITEM (Required)
 Use subfield |a for extent. Record the number of physical units of a sound recording by giving the number of parts in arabic numerals and one of the following terms as appropriate:</p>
 <pre><code>sound cartridge
 sound cassette
@@ -1583,7 +1583,7 @@ or  - give the number of physical units in arabic numerals and the name of the a
     space semicolon space precedes subfield |c
     space plus sign (+) space precedes subfield |e
     end 300 field with a period (usually already present) </p>
-<p>306 PLAYING TIME (Optional)
+<p><code>306</code>   PLAYING TIME (Optional)
     This field contains a formatted numerical representation of the playing time of the item.<br />
     Indicator positions are undefined and left blank.</p>
 <p>Use subfield |a for the playing time of an item.  The playing time is six characters in length and is formatted hhmmss (2 for hour, 2 for minute, and 2 for second).  If the recording is less than 1 hour, the hour is recorded as two zeros; if less than a minute, the minute is also recorded as two zeros.  Subfield |a is repeatable to allow the recording of the playing time of two or more pieces.</p>
@@ -1599,7 +1599,7 @@ or  - give the number of physical units in arabic numerals and the name of the a
 <p>Note:   If more than six playing times are recorded in a note field, field 306 is generally not used.  If the abbreviation ca. precedes an approximate playing time in a note, this abbreviation is disregarded when recording data in field 306.</p>
 <p>Punctuation:<br />
 No ending punctuation is added to the 306 field.</p>
-<p>440 SERIES STATEMENT  (Required if applicable)
+<p><code>440</code>   SERIES STATEMENT  (Required if applicable)
 Use for series statements to be traced by a series title.  A tracing refers to an access point in the catalog for the series title.  You can look in Pioneer, Orbis or Library of Congress databases under title to check for the correct form of the tracing (the authority record).  </p>
 <p>(If you choose not to trace a series statement or to trace it differently use tag 490. A 490 tag is used if series author is listed or if entire series is known to be by the author of the book in hand.)</p>
 <p>Use 440 tag if series does not list an exclusive author, e.g. the series is a publisher’s series.</p>
@@ -1611,7 +1611,7 @@ Use for series statements to be traced by a series title.  A tracing refers to a
 <p>Use subfield |v for the volume number or other sequential designations used in  conjunction with the series statement.  </p>
 <pre><code>|aThis is America ;|vno. 1
 </code></pre>
-<p>490 SERIES STATEMENT (Required if applicable)
+<p><code>490</code>   SERIES STATEMENT (Required if applicable)
 Use 490 first indicator 0 if you do not trace; 490 first indicator 1 if you trace differently.  If you use a 490 1  you must also have an 800 field for the correct form of the tracing.  </p>
 <p>A first indicator of 0 indicates a series not traced.</p>
 <p>Use subfield |a for author or title.</p>
@@ -1625,9 +1625,9 @@ Use 490 first indicator 0 if you do not trace; 490 first indicator 1 if you trac
 No ending punctuation is added to 440 or 490 fields.
 440 or 490 subfield |v is always preceded by space semicolon space
 440 or 490 subfield |x is always preceded by a comma space</p>
-<p>5XX NOTES </p>
+<p><code>5XX</code>   NOTES </p>
 <p>Refer to AACR2R rules in chapter 6 for order.</p>
-<p>500 GENERAL NOTES (If Needed)
+<p><code>500</code>   GENERAL NOTES (If Needed)
 General notes are notes for bibliographic data not present elsewhere in the record or information that is present elsewhere but must be repeated in field 500 to provide an intelligible note.   May be used for informal contents note.  General notes include: bibliographic history of the work, translation notes, enhancements to the physical description, program notes. A note must be added to identify source of a tracing if not otherwise in record.  In the notes area, in addition to some special tags, tag 500 is used liberally for additional cataloging information.</p>
 <p>If the title proper is not taken from the chief source of information or if it is taken from a container that is a unifying element, give the source of the title in a note.</p>
 <p>Examples:</p>
@@ -1643,7 +1643,7 @@ General notes are notes for bibliographic data not present elsewhere in the reco
 |aIssued also as cassette and as cartridge.
 </code></pre>
 <p>Punctuation:  Always end field with a period.</p>
-<p>505 CONTENTS NOTE (Optional)
+<p><code>505</code>   CONTENTS NOTE (Optional)
 Contents notes contain titles of separate works or parts of an item.  They may also include statements of responsibility associated with the works or parts of an item.  Volume numbers and other sequential designations are included in the note.  Use for analytical titles of independent works contained within the items and for titles of related items. This note may also contain statements of responsibility.</p>
 <p>The first indicator is used to indicate type of contents note.  Use 0 for full contents.  Use 2 for partial contents.  Indicator 1 is used for incomplete contents, i.e., when all parts of a set are not published yet.  </p>
 <p>Use subfield |a for formatted contents note.  When all information is in subfield |a, the second indicator is blank.</p>
@@ -1662,7 +1662,7 @@ Contents notes contain titles of separate works or parts of an item.  They may a
 space hyphen hyphen space ( -- ) is entered between each item 
 statements of responsibility are preceded by space forward slash space ( / )
 end field with a period or other ending punctuation or &gt; (angle bracket), but period after closing ] or ) – [but if note is incomplete or continues in the following 505 then none, unless the last word ends with its own punctuation] refer to AACR2R for punctuation for use of subfields |t, |r, and |g</p>
-<p>511 PARTICIPANT OR PERFORMER NOTE (Required)
+<p><code>511</code>   PARTICIPANT OR PERFORMER NOTE (Required)
 This field contains a note giving information about the participants, players, narrators, presenters or performers.  This field is repeatable.</p>
 <p>The first indicator contains a value that controls the generation of a display constant preceding the note in the OPAC (a 0 is used to generate no display constant, a 1 is used to generate the display constant Cast:).  The second indicator position is undefined and contains a blank.  </p>
 <p>Use subfield |a for the participant or performer note.</p>
@@ -1672,31 +1672,31 @@ This field contains a note giving information about the participants, players, n
 </code></pre>
 <p>Punctuation:
 Always end field with a period, unless other punctuation is present.</p>
-<p>538 SYSTEM DETAILS NOTE (Required if applicable)
+<p><code>538</code>   SYSTEM DETAILS NOTE (Required if applicable)
 Indicators are undefined, so should be blank.  Subfield |a contains the entire text of the note.</p>
 <pre><code>538 |aSystem requirements: CD/MP3 player or PC with MP3-capable software.
 </code></pre>
 <p>Punctuation:<br />
 end field with a period unless another mark of punctuation is present.</p>
-<p>586 AWARDS NOTE  (Optional)
+<p><code>586</code>   AWARDS NOTE  (Optional)
 This field contains information on awards associated with the described item. The field is repeated for each occurence of an award.</p>
 <p>The first indicator contains a value that controls the generation of a display constant preceding the note in the OPAC (a blank is used to generate the display constant Awards:, an 8 specifies no display constant is generated).  The second indicator position is undefined and contains a blank.  </p>
 <p>Use subfield |a for the awards note.</p>
 <p>Punctuation:
 No ending punctuation is added to 586 fields.</p>
-<p>6XX    SUBJECT HEADINGS (At least one subject heading is required for non-fiction.)  </p>
-<p>600 SUBJECT ADDED ENTRY-PERSONAL NAME
+<p><code>6XX</code>   SUBJECT HEADINGS (At least one subject heading is required for non-fiction.)  </p>
+<p><code>600</code>   SUBJECT ADDED ENTRY-PERSONAL NAME
 Use for personal names used as subject added entries such as:  names of persons who actually or probably lived, personal author/title subject added entries, and names of families. For example use for Burbank, Luther or Sacagawea.</p>
 <p>The first indicator is 1 for a single surname and 3 for a family name  The second       indicator refers to subject authority on which you base the subject entry.  Use 0 for Library of Congress (LC) subject headings. </p>
 <p>This MARC tag needs to follow LC standards. Try finding a match from the Pioneer, Orbis or Library of Congress databases. Enter names selected in the subject search in database. Try different selections until you find a possible fit.  Another way is to identify another book by the same author that has already been cataloged.  Look in the cataloged record for possible Subject Heading-Personal Name that would fit. When you have chosen a match, convert the catalog entry to a Marc Record. Enter into tag 600 exactly as you view in Marc format with the same indicators, and subfields.</p>
 <p>650     SUBJECT ADDED ENTRY – TOPICAL TERM
 Use for topical subject entry assigned by LC or assigned by an agency based on LC or LC Annotated Card Program (Subject Headings for Children’s Literature).  This Marc tag needs to follow LC standards. Try finding a match from the Pioneer, Orbis or Library of Congress databases. Enter words related to the subject of the book with the Subject search.  Try different words till you find a fit.  Another way is to identify another book by the same author that is similar in content and has already been cataloged.  Search for title and see if subject headings used will fit your item.  Convert chosen record to Marc Record.  Enter Marc tag indicator numbers and subfields exactly as you view them.  </p>
-<p>651 SUBJECT ADDED ENTRY – GEOGRAPHIC NAME
+<p><code>651</code>   SUBJECT ADDED ENTRY – GEOGRAPHIC NAME
 Use for geographic subject entries actually assigned by Library of Congress Subject Headings.  This would include place names such as Yellowstone National Park or Portland (Or.).  As above, would suggest searching Pioneer, Orbis or Library of Congress databases. Search under Subject for geographic names.  If you find suitable subject entry, convert the entry to Marc Record and copy the indicators and subfields exactly as found.  </p>
 <p>Punctuation: 
 A period is placed at the end of the last subfield, unless it ends with a hyphen or parenthesis.
 (The dashes normally shown preceding subfields v, x, y, and z are not carried in a MARC record. They are inserted by computer programs for public display of record.)</p>
-<p>700 ADDED ENTRY – PERSONAL NAME  (Added title optional)
+<p><code>700</code>   ADDED ENTRY – PERSONAL NAME  (Added title optional)
 Make an added personal name entry under the heading for a prominently named editor or compiler of monographic work.  Make an added personal name entry for an illustrator if the illustrations are considered to be an important feature of the work.  Make an added personal name entry for any other name that would provide an important access point not treated in another entry. It is best to match names to authority files already in use.  To do this, you can search the Pioneer, Orbis, or Library of Congress databases. Using the author search selection choose the individual listed in item being cataloged.  Convert selected record to Marc Record and follow spelling and dates given there to fill in this Marc tag. </p>
 <p>For first indicator, use 0 for a recognized forename such as Plato.  Use 1 for usual surname entries.  Use second indicator if adding a title, using 2.</p>
 <p>Use subfield |a for name and use subfield |d for dates if known</p>
@@ -1710,7 +1710,7 @@ Make an added personal name entry under the heading for a prominently named edit
 <p>740 TITLE ADDED ENTRY (Optional)
 Variant titles appear in field 246. Use for tracing specific titles in 505 contents note. Use for titles recorded in 245 subfield |b if desired.</p>
 <p>Punctuation:  End field with a period unless other form of punctuation is present.</p>
-<p>800 SERIES ADDED ENTRY – PERSONAL NAME/TITLE (Required if 490 1  field present)
+<p><code>800</code>   SERIES ADDED ENTRY – PERSONAL NAME/TITLE (Required if 490 1  field present)
 This field is used when all books in a series are written by the same author. Follow all rules for entry of author in 100 field. Title is added in subfield |t.  (It will be traced in online catalog). If volume number is present it is added in subfield |v.</p>
 <pre><code>800 1  |aKaron, Jan,|d1937-|tMitford years ;|v7.
 </code></pre>
@@ -1718,7 +1718,7 @@ This field is used when all books in a series are written by the same author. Fo
 Subfield |t is preceded by a period space.
 Subfield |v is preceded by space semicolon space.
 Field ends with a period.</p>
-<p>9XX LOCAL USE TAGS
+<p><code>9XX</code>   LOCAL USE TAGS
 Check with Pioneer System staff if you choose to use any of these fields. </p>
 <p><a name="catm_support_and_online_help"></a></p>
 <h5 id="sage-cataloging-support-and-online-help">Sage Cataloging Support and Online Help</h5>
