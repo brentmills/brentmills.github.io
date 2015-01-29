@@ -19,6 +19,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script>
+  <script src="../external_links.js"></script>
 
   <style>
     body {font-size: 90%;}
@@ -180,7 +181,7 @@
 <h1 id="backend-configurations">Backend Configurations</h1>
 <ul>
 <li>For those interested, this is a listing of some of the tables Evergreen uses to make decisions about hold, circulation and permission policies.<ul>
-<li>If you receive a "Permission Denied" type messsage when attempting to perfom an action in Evergreen, let us know if any of the permissions listed are on this table and we can get you up and running.</li>
+<li>If you receive a &#8220;Permission Denied&#8221; type messsage when attempting to perfom an action in Evergreen, let us know if any of the permissions listed are on this table and we can get you up and running.</li>
 </ul>
 </li>
 </ul>
@@ -673,7 +674,7 @@
  <tr><td>CANCEL_HOLDS</td><td>Allow a user to cancel holds</td></tr>
  <tr><td>CAPTURE_RESERVATION</td><td>Allows a user to capture booking reservations</td></tr>
  <tr><td>CHECKIN_BYPASS_HOLD_FULFILL</td><td>* no longer applicable</td></tr>
- <tr><td>CIRC_CLAIMS_RETURNED.override</td><td>Allow a user to check in or check out an item that has a status of 'claims returned'</td></tr>
+ <tr><td>CIRC_CLAIMS_RETURNED.override</td><td>Allow a user to check in or check out an item that has a status of &#8216;claims returned&#8217;</td></tr>
  <tr><td>CIRC_EXCEEDS_COPY_RANGE.override</td><td>Allow staff to override circulation copy range failure</td></tr>
  <tr><td>CIRC_OVERRIDE_DUE_DATE</td><td>Allow a user to change the due date on an item to any date</td></tr>
  <tr><td>CIRC_PERMIT_OVERRIDE</td><td>Allow a user to bypass the circulation permit call for check out</td></tr>
@@ -804,12 +805,12 @@
  <tr><td>DELETE_CIRC_DURATION</td><td>DELETE_CIRC_DURATION</td></tr>
  <tr><td>DELETE_CIRC_MOD</td><td>DELETE_CIRC_MOD</td></tr>
  <tr><td>DELETE_CN_BTYPE</td><td>DELETE_CN_BTYPE</td></tr>
- <tr><td>DELETE_CONTAINER</td><td>Allow a user to delete another user's container</td></tr>
- <tr><td>DELETE_CONTAINER_ITEM</td><td>Allow a user to delete an item out of another user's container</td></tr>
+ <tr><td>DELETE_CONTAINER</td><td>Allow a user to delete another user&#8217;s container</td></tr>
+ <tr><td>DELETE_CONTAINER_ITEM</td><td>Allow a user to delete an item out of another user&#8217;s container</td></tr>
  <tr><td>DELETE_COPY</td><td>Allow a user to delete a copy</td></tr>
  <tr><td>DELETE_COPY_BTYPE</td><td>DELETE_COPY_BTYPE</td></tr>
  <tr><td>DELETE_COPY_LOCATION</td><td>Allow a user to delete a copy location</td></tr>
- <tr><td>DELETE_COPY_NOTE</td><td>Allow a user to delete another user's copy notes</td></tr>
+ <tr><td>DELETE_COPY_NOTE</td><td>Allow a user to delete another user&#8217;s copy notes</td></tr>
  <tr><td>DELETE_COPY_STATUS</td><td>DELETE_COPY_STATUS</td></tr>
  <tr><td>DELETE_COPY_STAT_CAT</td><td>User may delete a copy statistical category</td></tr>
  <tr><td>DELETE_COPY_STAT_CAT_ENTRY</td><td>User may delete an entry from a copy statistical category</td></tr>
@@ -853,7 +854,7 @@
  <tr><td>DELETE_RECORD</td><td>Allow a staff member to directly remove a bibliographic record</td></tr>
  <tr><td>DELETE_RELEVANCE_ADJUSTMENT</td><td>DELETE_RELEVANCE_ADJUSTMENT</td></tr>
  <tr><td>DELETE_SURVEY</td><td>DELETE_SURVEY</td></tr>
- <tr><td>DELETE_TITLE_NOTE</td><td>Allow a user to delete another user's title note</td></tr>
+ <tr><td>DELETE_TITLE_NOTE</td><td>Allow a user to delete another user&#8217;s title note</td></tr>
  <tr><td>DELETE_TRANSIT</td><td>DELETE_TRANSIT</td></tr>
  <tr><td>DELETE_TRANSLATION</td><td>DELETE_TRANSLATION</td></tr>
  <tr><td>DELETE_TRIGGER_CLEANUP</td><td>Allow a user to delete trigger cleanup entries</td></tr>
@@ -866,7 +867,7 @@
  <tr><td>DELETE_USER_BTYPE</td><td>DELETE_USER_BTYPE</td></tr>
  <tr><td>DELETE_USER_XACTS.override</td><td>&nbsp;</td></tr>
  <tr><td>DELETE_VOLUME</td><td>Allow a user to delete a volume</td></tr>
- <tr><td>DELETE_VOLUME_NOTE</td><td>Allow a user to delete another user's volume note</td></tr>
+ <tr><td>DELETE_VOLUME_NOTE</td><td>Allow a user to delete another user&#8217;s volume note</td></tr>
  <tr><td>DELETE_VOLUME_PREFIX</td><td>Delete prefix label definition.</td></tr>
  <tr><td>DELETE_VOLUME_SUFFIX</td><td>Delete suffix label definition.</td></tr>
  <tr><td>DELETE_VR_FORMAT</td><td>DELETE_VR_FORMAT</td></tr>
@@ -893,18 +894,18 @@
  <tr><td>MANAGE_PROVIDER</td><td>Allow a user to view and purchase from a provider</td></tr>
  <tr><td>MAP_MONOGRAPH_PART</td><td>Create/Update/Delete Copy Monograph Part Map</td></tr>
  <tr><td>MARK_BAD_DEBT</td><td>Allow a user to mark a transaction as bad (unrecoverable) debt</td></tr>
- <tr><td>MARK_ITEM_AVAILABLE</td><td>Allow a user to mark an item status as 'available'</td></tr>
- <tr><td>MARK_ITEM_BINDERY</td><td>Allow a user to mark an item status as 'bindery'</td></tr>
- <tr><td>MARK_ITEM_CHECKED_OUT</td><td>Allow a user to mark an item status as 'checked out'</td></tr>
- <tr><td>MARK_ITEM_ILL</td><td>Allow a user to mark an item status as 'inter-library loan'</td></tr>
- <tr><td>MARK_ITEM_IN_PROCESS</td><td>Allow a user to mark an item status as 'in process'</td></tr>
- <tr><td>MARK_ITEM_IN_TRANSIT</td><td>Allow a user to mark an item status as 'in transit'</td></tr>
- <tr><td>MARK_ITEM_LOST</td><td>Allow a user to mark an item status as 'lost'</td></tr>
- <tr><td>MARK_ITEM_MISSING</td><td>Allow a user to mark an item status as 'missing'</td></tr>
+ <tr><td>MARK_ITEM_AVAILABLE</td><td>Allow a user to mark an item status as &#8216;available&#8217;</td></tr>
+ <tr><td>MARK_ITEM_BINDERY</td><td>Allow a user to mark an item status as &#8216;bindery&#8217;</td></tr>
+ <tr><td>MARK_ITEM_CHECKED_OUT</td><td>Allow a user to mark an item status as &#8216;checked out&#8217;</td></tr>
+ <tr><td>MARK_ITEM_ILL</td><td>Allow a user to mark an item status as &#8216;inter-library loan&#8217;</td></tr>
+ <tr><td>MARK_ITEM_IN_PROCESS</td><td>Allow a user to mark an item status as &#8216;in process&#8217;</td></tr>
+ <tr><td>MARK_ITEM_IN_TRANSIT</td><td>Allow a user to mark an item status as &#8216;in transit&#8217;</td></tr>
+ <tr><td>MARK_ITEM_LOST</td><td>Allow a user to mark an item status as &#8216;lost&#8217;</td></tr>
+ <tr><td>MARK_ITEM_MISSING</td><td>Allow a user to mark an item status as &#8216;missing&#8217;</td></tr>
  <tr><td>MARK_ITEM_MISSING_PIECES</td><td>Allows the Mark Item Missing Pieces action.</td></tr>
- <tr><td>MARK_ITEM_ON_HOLDS_SHELF</td><td>Allow a user to mark an item status as 'on holds shelf'</td></tr>
- <tr><td>MARK_ITEM_ON_ORDER</td><td>Allow a user to mark an item status as 'on order'</td></tr>
- <tr><td>MARK_ITEM_RESHELVING</td><td>Allow a user to mark an item status as 'reshelving'</td></tr>
+ <tr><td>MARK_ITEM_ON_HOLDS_SHELF</td><td>Allow a user to mark an item status as &#8216;on holds shelf&#8217;</td></tr>
+ <tr><td>MARK_ITEM_ON_ORDER</td><td>Allow a user to mark an item status as &#8216;on order&#8217;</td></tr>
+ <tr><td>MARK_ITEM_RESHELVING</td><td>Allow a user to mark an item status as &#8216;reshelving&#8217;</td></tr>
  <tr><td>MAX_RENEWALS_REACHED.override</td><td>Allow a user to renew an item past the maximum renewal count</td></tr>
  <tr><td>MERGE_AUTH_RECORDS</td><td>Allow a user to merge authority records together</td></tr>
  <tr><td>MERGE_BIB_RECORDS</td><td>MERGE_BIB_RECORDS</td></tr>
@@ -933,11 +934,11 @@
  <tr><td>RETRIEVE_RESERVATION_PULL_LIST</td><td>Allows a user to retrieve a booking reservation pull list</td></tr>
  <tr><td>RUN_REPORTS</td><td>Allow a user to run reports</td></tr>
  <tr><td>SAVED_FILTER_DIALOG_FILTERS</td><td>Allows users to save and load sets of filters for filter dialogs, available in certain staff interfaces</td></tr>
- <tr><td>SET_CIRC_CLAIMS_RETURNED</td><td>Allow a user to mark an item as 'claims returned'</td></tr>
+ <tr><td>SET_CIRC_CLAIMS_RETURNED</td><td>Allow a user to mark an item as &#8216;claims returned&#8217;</td></tr>
  <tr><td>SET_CIRC_CLAIMS_RETURNED.override</td><td>Allows staff to override the max claims returned value for a patron</td></tr>
  <tr><td>SET_CIRC_LONG_OVERDUE</td><td>Allows the user to mark a circulation as long-overdue</td></tr>
- <tr><td>SET_CIRC_LOST</td><td>Allow a user to mark an item as 'lost'</td></tr>
- <tr><td>SET_CIRC_MISSING</td><td>Allow a user to mark an item as 'missing'</td></tr>
+ <tr><td>SET_CIRC_LOST</td><td>Allow a user to mark an item as &#8216;lost&#8217;</td></tr>
+ <tr><td>SET_CIRC_MISSING</td><td>Allow a user to mark an item as &#8216;missing&#8217;</td></tr>
  <tr><td>SHARE_REPORT_FOLDER</td><td>Allow a user to share report his own folders</td></tr>
  <tr><td>STAFF_LOGIN</td><td>Allow a user to log in to the staff client</td></tr>
  <tr><td>TITLE_HOLDS</td><td>Allow a user to place a hold at the title level</td></tr>
@@ -962,7 +963,7 @@
  <tr><td>UPDATE_CIRC_DURATION</td><td>UPDATE_CIRC_DURATION</td></tr>
  <tr><td>UPDATE_CIRC_MOD</td><td>UPDATE_CIRC_MOD</td></tr>
  <tr><td>UPDATE_CN_BTYPE</td><td>UPDATE_CN_BTYPE</td></tr>
- <tr><td>UPDATE_CONTAINER</td><td>Allow a user to update another user's container</td></tr>
+ <tr><td>UPDATE_CONTAINER</td><td>Allow a user to update another user&#8217;s container</td></tr>
  <tr><td>UPDATE_COPY</td><td>Allow a user to edit a copy</td></tr>
  <tr><td>UPDATE_COPY_BTYPE</td><td>UPDATE_COPY_BTYPE</td></tr>
  <tr><td>UPDATE_COPY_LOCATION</td><td>Allow a user to update a copy location</td></tr>
@@ -974,8 +975,8 @@
  <tr><td>UPDATE_FUNDING_SOURCE</td><td>Allow a user to update a funding source</td></tr>
  <tr><td>UPDATE_FUND_ALLOCATION</td><td>Allow a user to update a fund allocation</td></tr>
  <tr><td>UPDATE_GROUP_PERM</td><td>UPDATE_GROUP_PERM</td></tr>
- <tr><td>UPDATE_HOLD</td><td>Allow a user to update another user's hold</td></tr>
- <tr><td>UPDATE_HOLD_REQUEST_TIME</td><td>Allows editing of a hold's request time, and/or its Cut-in-line/Top-of-queue flag.</td></tr>
+ <tr><td>UPDATE_HOLD</td><td>Allow a user to update another user&#8217;s hold</td></tr>
+ <tr><td>UPDATE_HOLD_REQUEST_TIME</td><td>Allows editing of a hold&#8217;s request time, and/or its Cut-in-line/Top-of-queue flag.</td></tr>
  <tr><td>UPDATE_HOURS_OF_OPERATION</td><td>UPDATE_HOURS_OF_OPERATION</td></tr>
  <tr><td>UPDATE_IMPORT_ITEM</td><td>UPDATE_IMPORT_ITEM</td></tr>
  <tr><td>UPDATE_IMPORT_ITEM_ATTR_DEF</td><td>UPDATE_IMPORT_ITEM_ATTR_DEF</td></tr>
@@ -1030,11 +1031,11 @@
  <tr><td>UPDATE_ORG_UNIT_SETTING.patron.password.use_phone</td><td>UPDATE_ORG_UNIT_SETTING.patron.password.use_phone</td></tr>
  <tr><td>UPDATE_ORG_UNIT_SETTING.ui.hide_copy_editor_fields</td><td>Allows staff to edit displayed copy editor fields</td></tr>
  <tr><td>UPDATE_ORG_UNIT_SETTING_ALL</td><td>UPDATE_ORG_UNIT_SETTING_ALL</td></tr>
- <tr><td>UPDATE_PATRON_ACTIVE_CARD</td><td>Allows a user to manually adjust a patron's active cards</td></tr>
- <tr><td>UPDATE_PATRON_CLAIM_NEVER_CHECKED_OUT_COUNT</td><td>Allows staff to manually change a patron's claims never checkout out count</td></tr>
- <tr><td>UPDATE_PATRON_CLAIM_RETURN_COUNT</td><td>Allows staff to manually change a patron's claims returned count</td></tr>
+ <tr><td>UPDATE_PATRON_ACTIVE_CARD</td><td>Allows a user to manually adjust a patron&#8217;s active cards</td></tr>
+ <tr><td>UPDATE_PATRON_CLAIM_NEVER_CHECKED_OUT_COUNT</td><td>Allows staff to manually change a patron&#8217;s claims never checkout out count</td></tr>
+ <tr><td>UPDATE_PATRON_CLAIM_RETURN_COUNT</td><td>Allows staff to manually change a patron&#8217;s claims returned count</td></tr>
  <tr><td>UPDATE_PATRON_COLLECTIONS_EXEMPT</td><td>Allows a user to indicate that a patron is exempt from collections processing</td></tr>
- <tr><td>UPDATE_PATRON_PRIMARY_CARD</td><td>Allows a user to manually adjust a patron's primary card</td></tr>
+ <tr><td>UPDATE_PATRON_PRIMARY_CARD</td><td>Allows a user to manually adjust a patron&#8217;s primary card</td></tr>
  <tr><td>UPDATE_PATRON_STAT_CAT</td><td>User may update a patron statistical category</td></tr>
  <tr><td>UPDATE_PATRON_STAT_CAT_ENTRY</td><td>User may update an entry in a patron statistical category</td></tr>
  <tr><td>UPDATE_PATRON_STAT_CAT_ENTRY_DEFAULT</td><td>User may reset a default entry in a patron statistical category</td></tr>
@@ -1054,7 +1055,7 @@
  <tr><td>UPDATE_TRIGGER_HOOK</td><td>Allow a user to update trigger hooks</td></tr>
  <tr><td>UPDATE_TRIGGER_REACTOR</td><td>Allow a user to update trigger reactors</td></tr>
  <tr><td>UPDATE_TRIGGER_VALIDATOR</td><td>Allow a user to update trigger validators</td></tr>
- <tr><td>UPDATE_USER</td><td>Allow a user to edit a user's record</td></tr>
+ <tr><td>UPDATE_USER</td><td>Allow a user to edit a user&#8217;s record</td></tr>
  <tr><td>UPDATE_USER_BTYPE</td><td>UPDATE_USER_BTYPE</td></tr>
  <tr><td>UPDATE_VOLUME</td><td>Allow a user to edit volumes - needed for merging records. This is a duplicate of VOLUME_UPDATE; user must have both permissions at appropriate level to merge records.</td></tr>
  <tr><td>UPDATE_VOLUME_NOTE</td><td>UPDATE_VOLUME_NOTE</td></tr>
@@ -1073,7 +1074,7 @@
  <tr><td>VIEW_CIRCULATIONS</td><td>Allow a user to see what another user has checked out</td></tr>
  <tr><td>VIEW_CIRC_MATRIX_MATCHPOINT</td><td>VIEW_CIRC_MATRIX_MATCHPOINT</td></tr>
  <tr><td>VIEW_CLAIM</td><td>VIEW_CLAIM</td></tr>
- <tr><td>VIEW_CONTAINER</td><td>Allow a user to view another user's containers (buckets)</td></tr>
+ <tr><td>VIEW_CONTAINER</td><td>Allow a user to view another user&#8217;s containers (buckets)</td></tr>
  <tr><td>VIEW_COPY_CHECKOUT_HISTORY</td><td>Allow a user to view which users have checked out a given copy</td></tr>
  <tr><td>VIEW_COPY_NOTES</td><td>Allow a user to view all notes attached to a copy</td></tr>
  <tr><td>VIEW_CREDIT_CARD_PROCESSING</td><td>View org unit settings related to credit card processing</td></tr>
@@ -1081,7 +1082,7 @@
  <tr><td>VIEW_FUNDING_SOURCE</td><td>Allow a user to view a funding source</td></tr>
  <tr><td>VIEW_FUND_ALLOCATION</td><td>Allow a user to view a fund allocation</td></tr>
  <tr><td>VIEW_GROUP_PENALTY_THRESHOLD</td><td>VIEW_GROUP_PENALTY_THRESHOLD</td></tr>
- <tr><td>VIEW_HOLD</td><td>Allow a user to view another user's holds</td></tr>
+ <tr><td>VIEW_HOLD</td><td>Allow a user to view another user&#8217;s holds</td></tr>
  <tr><td>VIEW_HOLD_MATRIX_MATCHPOINT</td><td>VIEW_HOLD_MATRIX_MATCHPOINT</td></tr>
  <tr><td>VIEW_HOLD_NOTIFICATION</td><td>Allow a user to view notifications attached to a hold</td></tr>
  <tr><td>VIEW_HOLD_PERMIT</td><td>Allow a user to see if another user has permission to place a hold on a given copy</td></tr>
@@ -1091,7 +1092,7 @@
  <tr><td>VIEW_ORG_SETTINGS</td><td>Allows a user to view all org settings at the specified level</td></tr>
  <tr><td>VIEW_PERMISSION</td><td>Allow a user to view user permissions within the user permissions editor</td></tr>
  <tr><td>VIEW_PERMIT_CHECKOUT</td><td>Allow a user to determine whether another user can check out an item</td></tr>
- <tr><td>VIEW_PERM_GROUPS</td><td>Allow a user to view other users' permission groups</td></tr>
+ <tr><td>VIEW_PERM_GROUPS</td><td>Allow a user to view other users&#8217; permission groups</td></tr>
  <tr><td>VIEW_PICKLIST</td><td>Allow a user to view another users picklist</td></tr>
  <tr><td>VIEW_PROVIDER</td><td>Allow a user to view a provider</td></tr>
  <tr><td>VIEW_PURCHASE_ORDER</td><td>Allows a user to view a purchase order</td></tr>
@@ -1100,13 +1101,13 @@
  <tr><td>VIEW_SERIAL_SUBSCRIPTION</td><td>VIEW_SERIAL_SUBSCRIPTION</td></tr>
  <tr><td>VIEW_STANDING_PENALTY</td><td>VIEW_STANDING_PENALTY</td></tr>
  <tr><td>VIEW_TITLE_NOTES</td><td>Allow a user to view all notes attached to a title</td></tr>
- <tr><td>VIEW_TRANSACTION</td><td>Allow a user may view another user's transactions</td></tr>
+ <tr><td>VIEW_TRANSACTION</td><td>Allow a user may view another user&#8217;s transactions</td></tr>
  <tr><td>VIEW_TRIGGER_EVENT</td><td>Allows a user to view circ- and hold-related action/trigger events</td></tr>
  <tr><td>VIEW_TRIGGER_EVENT_DEF</td><td>Allow a user to view trigger event definitions</td></tr>
- <tr><td>VIEW_USER</td><td>Allow a user to view another user's Patron Record</td></tr>
+ <tr><td>VIEW_USER</td><td>Allow a user to view another user&#8217;s Patron Record</td></tr>
  <tr><td>VIEW_USER_FINES_SUMMARY</td><td>Allow a user to view bill details</td></tr>
  <tr><td>VIEW_USER_SETTING_TYPE</td><td>Allows viewing of configurable user setting types.</td></tr>
- <tr><td>VIEW_USER_TRANSACTIONS</td><td>Allow a user to see another user's grocery or circulation transactions in the Bills Interface; duplicate of VIEW_TRANSACTION</td></tr>
+ <tr><td>VIEW_USER_TRANSACTIONS</td><td>Allow a user to see another user&#8217;s grocery or circulation transactions in the Bills Interface; duplicate of VIEW_TRANSACTION</td></tr>
  <tr><td>VIEW_VOLUME_NOTES</td><td>Allow a user to view all notes attached to a volume</td></tr>
  <tr><td>VIEW_ZIP_DATA</td><td>Allow a user to query the ZIP code data method</td></tr>
  <tr><td>VOID_BILLING</td><td>Allow a user to void a bill</td></tr>
@@ -1114,20 +1115,20 @@
  <tr><td>actor.org_unit.closed_date.create</td><td>Allow a user to create a new closed date for a location</td></tr>
  <tr><td>actor.org_unit.closed_date.delete</td><td>Allow a user to remove a closed date interval for a given location</td></tr>
  <tr><td>actor.org_unit.closed_date.update</td><td>Allow a user to update a closed date interval for a given location</td></tr>
- <tr><td>group_application.user</td><td>Allow a user to add/remove users to/from the "User" group</td></tr>
- <tr><td>group_application.user.patron</td><td>Allow a user to add/remove users to/from the "Patron" group</td></tr>
- <tr><td>group_application.user.sip_client</td><td>Allow a user to add/remove users to/from the "SIP-Client" group</td></tr>
- <tr><td>group_application.user.staff</td><td>Allow a user to add/remove users to/from the "Staff" group</td></tr>
- <tr><td>group_application.user.staff.acq</td><td>Allows a user to add/remove/edit users in the "ACQ" group</td></tr>
- <tr><td>group_application.user.staff.acq_admin</td><td>Allows a user to add/remove/edit users in the "Acquisitions Administrators" group</td></tr>
- <tr><td>group_application.user.staff.admin.global_admin</td><td>Allow a user to add/remove users to/from the "GlobalAdmin" group</td></tr>
- <tr><td>group_application.user.staff.admin.lib_manager</td><td>Allow a user to add/remove users to/from the "LibraryManager" group</td></tr>
- <tr><td>group_application.user.staff.admin.local_admin</td><td>Allow a user to add/remove users to/from the "LocalAdmin" group</td></tr>
- <tr><td>group_application.user.staff.cat</td><td>Allow a user to add/remove users to/from the "Cataloger" group</td></tr>
- <tr><td>group_application.user.staff.cat.cat1</td><td>Allow a user to add/remove users to/from the "Cat1" group</td></tr>
- <tr><td>group_application.user.staff.circ</td><td>Allow a user to add/remove users to/from the "Circulator" group</td></tr>
- <tr><td>group_application.user.staff.supercat</td><td>Allow a user to add/remove users to/from the "Supercat" group</td></tr>
- <tr><td>group_application.user.vendor</td><td>Allow a user to add/remove users to/from the "Vendor" group</td></tr>
+ <tr><td>group_application.user</td><td>Allow a user to add/remove users to/from the &#8220;User&#8221; group</td></tr>
+ <tr><td>group_application.user.patron</td><td>Allow a user to add/remove users to/from the &#8220;Patron&#8221; group</td></tr>
+ <tr><td>group_application.user.sip_client</td><td>Allow a user to add/remove users to/from the &#8220;SIP-Client&#8221; group</td></tr>
+ <tr><td>group_application.user.staff</td><td>Allow a user to add/remove users to/from the &#8220;Staff&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.acq</td><td>Allows a user to add/remove/edit users in the &#8220;ACQ&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.acq_admin</td><td>Allows a user to add/remove/edit users in the &#8220;Acquisitions Administrators&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.admin.global_admin</td><td>Allow a user to add/remove users to/from the &#8220;GlobalAdmin&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.admin.lib_manager</td><td>Allow a user to add/remove users to/from the &#8220;LibraryManager&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.admin.local_admin</td><td>Allow a user to add/remove users to/from the &#8220;LocalAdmin&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.cat</td><td>Allow a user to add/remove users to/from the &#8220;Cataloger&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.cat.cat1</td><td>Allow a user to add/remove users to/from the &#8220;Cat1&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.circ</td><td>Allow a user to add/remove users to/from the &#8220;Circulator&#8221; group</td></tr>
+ <tr><td>group_application.user.staff.supercat</td><td>Allow a user to add/remove users to/from the &#8220;Supercat&#8221; group</td></tr>
+ <tr><td>group_application.user.vendor</td><td>Allow a user to add/remove users to/from the &#8220;Vendor&#8221; group</td></tr>
  <tr><td>money.collections_tracker.create</td><td>Allow a user to put someone into collections</td></tr>
  <tr><td>money.collections_tracker.delete</td><td>Allow a user to remove someone from collections</td></tr>
  <tr><td>user_request.create</td><td>user_request.create</td></tr>
