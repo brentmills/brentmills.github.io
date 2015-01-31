@@ -62,6 +62,34 @@
                         
                             <li class="toctree-l2"><a href="#cataloging-overview">Cataloging Overview</a></li>
                             
+                                <li><a class="toctree-l3" href="#search-the-catalog">Search the Catalog</a></li>
+                            
+                                <li><a class="toctree-l3" href="#retrieve-title-by-tcn">Retrieve title by TCN</a></li>
+                            
+                                <li><a class="toctree-l3" href="#retrieve-title-by-database-id">Retrieve title by Database ID</a></li>
+                            
+                                <li><a class="toctree-l3" href="#display-item">Display Item</a></li>
+                            
+                                <li><a class="toctree-l3" href="#manage-copy-buckets">Manage Copy Buckets</a></li>
+                            
+                                <li><a class="toctree-l3" href="#manage-record-buckets">Manage Record Buckets</a></li>
+                            
+                                <li><a class="toctree-l3" href="#create-new-marc-record">Create New MARC Record</a></li>
+                            
+                                <li><a class="toctree-l3" href="#import-record-from-z3950">Import Record from Z39.50</a></li>
+                            
+                                <li><a class="toctree-l3" href="#marc-batch-importexport">MARC Batch Import/Export</a></li>
+                            
+                                <li><a class="toctree-l3" href="#marc-batch-edit">MARC Batch Edit</a></li>
+                            
+                                <li><a class="toctree-l3" href="#replace-barcode">Replace Barcode</a></li>
+                            
+                                <li><a class="toctree-l3" href="#retrieve-last-record">Retrieve Last Record</a></li>
+                            
+                                <li><a class="toctree-l3" href="#manage-authorities">Manage Authorities</a></li>
+                            
+                                <li><a class="toctree-l3" href="#link-checker">Link Checker</a></li>
+                            
                         
                         </ul>
                     
@@ -161,9 +189,79 @@
 <h1 id="cataloging-overview">Cataloging Overview</h1>
 <p></center>
 <hr size=2></p>
+<p>When we talk about the &#8220;Cataloging&#8221; portion of Evergreen, we are talking primarily about the features that roughly correspond to the options available on the &#8220;Cataloging&#8221; menu option of the staff client.</p>
+<p>When you go to the &#8220;Cataloging&#8221; section in the top menu of Evergreen, this is what you&#8217;re looking at:</p>
+<p><center><img alt="Cataloging Menu" src="..//images/cat_catataloging_menu.png" /></center></p>
+<h2 id="search-the-catalog">Search the Catalog</h2>
+<p>There are multiple ways to access this screen throughout Evergreen. One of the most commong ways is either through the main landing page when you open the staff client:</p>
+<p><img alt="Splash" src="..//images/cat_search_the_catalog_splash.png" /></p>
+<p>When searching where the arrow points, you&#8217;re perfoming a generic keyword search. Clicking on the &#8220;Search the Catalog&#8221; button or selection from the Cataloging menu will place you in the Advanced search landing page.</p>
+<p><img alt="Button" src="..//images/cat_search_the_catalog1.png" /></p>
+<p>Clicking on the arrow to the right of the &#8220;Search the Catalog&#8221; button will also allow you to perfom TCN/Database ID searches which are described below. You can also reach these through the Cataloging dropdown menu.</p>
+<p><img alt="After Click" src="..//images/cat_search_the_catalog2.png" /></p>
+<p>Once you click on the &#8220;Search the Catalog&#8221; button or select it from the drop down, this is the screen you are presented with. This is essentially the Advanced Search Screen. You have options to search by Numeric values (ISBN/ISSN/Call Number/LCCN/TCN/Item Barcode) or an &#8220;Expert&#8221; search which allows you to search within fields and subfields or MARC records. Be sure to leave the &#8220;Search Library&#8221; set to the top level &#8220;Sage Library Consortium&#8221; if you are using this option.</p>
+<h2 id="retrieve-title-by-tcn">Retrieve title by TCN</h2>
+<p><img alt="TCN" src="..//images/cat_retrieve_title_tcn.png" /></p>
+<p>This is for searching at the Bibliographic record level. TCN stands for Title Control Number and is located in the upper, brief information section when opening a record within the staff client.</p>
+<p><img alt="TCN" src="..//images/cat_where_tcn_dbid.png" /></p>
+<p>These two numbers are important for enabling quick location and editing of MARC records within Evergreen. If you have questions about a certain MARC/Bibliographic record, mentioning the TCN/DB ID to Beth or Brent is extremely helpful in locating information about it.</p>
+<h2 id="retrieve-title-by-database-id">Retrieve title by Database ID</h2>
+<p><img alt="DB ID" src="..//images/cat_retrieve_title_dbid.png" /></p>
+<p>This is where you would enter the Bibliographic record&#8217;s database ID to retrieve a single title.</p>
+<h2 id="display-item">Display Item</h2>
+<p><img alt="Display Item" src="..//images/cat_display_item.png" /></p>
+<p>Choosing the &#8220;Display Item&#8221; option simply brings up the versitile &#8220;Item Status&#8221; screen. Here you can see item information as well as edit.</p>
+<h2 id="manage-copy-buckets">Manage Copy Buckets</h2>
+<p><img alt="Copy Buckets" src="..//images/cat_manage_copy_buckets.png" /></p>
+<p>Copy Buckets can be very useful when editing a large collection of barcoded items that you can&#8217;t do in one session. Or, if you&#8217;d like to share your batch of &#8220;to be edited&#8221; items with another staff member.</p>
+<p>When you first choose this option, you will need to create a bucket for yourself by selecting &#8220;New Bucket&#8221;. This interface is great for doing batch requests on items, batch edits on attributes (Shelving Location, Copy Status, Price).</p>
+<h2 id="manage-record-buckets">Manage Record Buckets</h2>
+<p><img alt="Rec Buckets 1" src="..//images/cat_recordbuckets1.png" /></p>
+<p>When you first select this option you&#8217;ll be placed into the &#8220;Bucket View&#8221; tab. If you haven&#8217;t created a bucket previously, you&#8217;ll need to create one by clicking on &#8220;Bucket Actions &gt; Create New Bucket&#8221;. You&#8217;ll then see your bucket title appear next to a Bucket #. Write this number down, as it how other users can view or update your bucket from other workstations. If you have a group of Records you&#8217;d like me, Beth or David to look at, placing them in a Record/Copy Bucket and sharing the number with us is an easy way.</p>
+<p><img alt="Rec Buckets 2" src="..//images/cat_recordbuckets2.png" /></p>
+<p>You will then go to the record query tab to search for records to load into the staging &#8220;Pending Records&#8221; tab. Note: you are loading records, not items. So there won&#8217;t be any barcodes listed. TCN and Database ID numbers are the ones you should be concerned with here. You can query Evergreen by searching for a term/title and then, when you find the correct one, highlight it and click &#8220;Add Selected to Pending Records&#8221;. You can do this with multiple items as well. It will then move those records into the staging tab: &#8220;Pending Records&#8221;. I would advise against clicking &#8220;Add All to Pending Records&#8221;. This will load ALL your search results into the &#8220;Pending Records&#8221; screen. There is not an easy way to delete records from the &#8220;Pending Records&#8221; screen, so use cautiously.</p>
+<p><img alt="Rec Buckets 3" src="..//images/cat_recordbuckets3.png" /></p>
+<p>Now you can move over to the &#8220;Pending Records&#8221; tab. Here you can select which items of those you found are really the ones you want to put into your Record bucket. Select which records you&#8217;d like and then click &#8220;Add Selected to current Bucket&#8221;.</p>
+<p><img alt="Rec Buckets 4" src="..//images/cat_recordbuckets4.png" /></p>
+<p>In the &#8220;Bucket View&#8221; you can finally manipulate the records how you would like. Either by:</p>
 <ul>
-<li>When we talk about the &#8220;Cataloging&#8221; portion of Evergreen, we are talking primarily about the features that roughly correspond to the options available on the &#8220;Cataloging&#8221; menu option of the staff client.</li>
+<li>
+<p><b>Show All in Catalog:</b> This will bring up all the records in the OPAC style view for you to examine.</p>
+</li>
+<li>
+<p><b>Transfer Title Holds:</b> Be careful with this option. You will basically move the holds that are on one title to another title. Useful if you have patrons selecting holds on the Audio Cassette version of Harry Potter&#8217;s latest when they meant to choose the Book record instead. Better to use this on a case-by-case basic than in one massive update.</p>
+</li>
+<li>
+<p><b>Delete All Records:</b> Be careful with this one as well. I think you know why</p>
+</li>
+<li>
+<p><b>Merge All Records:</b> If there are many different versions of the same record floating around, you can consolidate them with this option. Be careful with this as well.</p>
+</li>
+<li>
+<p><b>Marc Batch Edit:</b> Opens up the MARC Batch Edit function.</p>
+</li>
+<li>
+<p><b>Export All Records:</b> Allows you to export the bibliographic records to MARC21, USMARC, XML or Evergreen&#8217;s BRE (Bibliographic Record Entry) format.</p>
+</li>
 </ul>
+<h2 id="create-new-marc-record">Create New MARC Record</h2>
+<p><img alt="Create MARC 1" src="..//images/cat_create_marc1.png" />
+<img alt="Create MARC 2" src="..//images/cat_create_marc2.png" /></p>
+<h2 id="import-record-from-z3950">Import Record from Z39.50</h2>
+<p><img alt="Import Z39.50" src="..//images/cat_import_record_z3950.png" /></p>
+<h2 id="marc-batch-importexport">MARC Batch Import/Export</h2>
+<p><img alt="" src="..//images/cat_marc_batch_import_screen.png" /></p>
+<h2 id="marc-batch-edit">MARC Batch Edit</h2>
+<p><img alt="" src="..//images/cat_marc_batch_edit.png" /></p>
+<h2 id="replace-barcode">Replace Barcode</h2>
+<p><img alt="" src="..//images/cat_replace_barcode.png" /></p>
+<p>Prompts you for the item&#8217;s current barcode and then brings up the combined Volume/Copy Editor where you can change the Call Number or Barcode of an item.</p>
+<h2 id="retrieve-last-record">Retrieve Last Record</h2>
+<p>If you accidentally closed the tab of a record you were looking at or editing, this option will bring that screen back.</p>
+<h2 id="manage-authorities">Manage Authorities</h2>
+<p>This is a Cat1 menu.</p>
+<h2 id="link-checker">Link Checker</h2>
+<p>This is not used within Sage.</p>
 
             </div>
           </div>
